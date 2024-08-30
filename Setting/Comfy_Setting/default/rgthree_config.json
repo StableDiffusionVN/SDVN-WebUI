@@ -1,0 +1,13 @@
+{
+  "features": {
+    "group_header_fast_toggle": {
+      "enabled": false
+    },
+    "menu_auto_nest": {
+      "subdirs": false
+    },
+    "progress_bar": {
+      "enabled": false
+    }
+  }
+}

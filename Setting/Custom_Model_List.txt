@@ -1,0 +1,1 @@
+https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SDXL/Real/Leosam-HelloWorldXL_v7.safetensors

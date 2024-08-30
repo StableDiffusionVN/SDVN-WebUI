@@ -1,0 +1,52 @@
+git clone https://github.com/ltdrdata/ComfyUI-Manager
+git clone https://github.com/rgthree/rgthree-comfy
+git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+git clone https://github.com/space-nuko/nui-suite
+git clone https://github.com/adieyal/comfyui-dynamicprompts
+pip install --upgrade -q -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/requirements.txt
+python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
+git clone https://github.com/Fannovel16/comfyui_controlnet_aux
+pip install -r /content/ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
+
+git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus
+pip install insightface
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.bin  -d /content/ComfyUI/models/ipadapter -o ip-adapter_sd15.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.bin  -d /content/ComfyUI/models/ipadapter -o ip-adapter-plus_sd15.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter_sdxl_vit-h.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-plus_sdxl_vit-h.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid_sd15.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sd15.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid_sdxl.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sdxl.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors  -d /content/ComfyUI/models/clip_vision/ -o  CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+
+git clone https://github.com/cubiq/ComfyUI_InstantID
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/InstantX/InstantID/resolve/main/ip-adapter.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
+git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
+
+git clone https://github.com/yolain/ComfyUI-Easy-Use
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.txt
+git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
+git clone https://github.com/chrisgoringe/cg-use-everywhere
+git clone https://github.com/jags111/efficiency-nodes-comfyui
+pip install -q -r efficiency-nodes-comfyui/requirements.txt
+git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
+pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
+
+git clone https://github.com/storyicon/comfyui_segment_anything
+pip install -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
+git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
+git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
+
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt -d /content/ComfyUI/models/vae -o VAE84.vae.pt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/control-lora/resolve/main/revision/clip_vision_g.safetensors -d /content/ComfyUI/models/clip_vision -o clip_vision_g.safetensor
+
+git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
+wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
+pip install -q comfy-cli
+
+git clone https://github.com/EeroHeikkinen/ComfyUI-eesahesNodes
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-eesahesNodes/requirements.txt
+git clone https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_bitsandbytes_NF4/requirements.txt

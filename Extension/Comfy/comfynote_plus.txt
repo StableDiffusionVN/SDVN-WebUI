@@ -1,0 +1,24 @@
+git clone https://github.com/shadowcz007/comfyui-mixlab-nodes
+pip install -q -r comfyui-mixlab-nodes/requirements.txt
+
+git clone https://github.com/TencentQQGYLab/ComfyUI-ELLA
+pip install -q -r ComfyUI-ELLA/requirements.txt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/QQGYLab/ELLA/resolve/main/ella-sd1.5-tsc-t5xl.safetensors -d /content/ComfyUI/models/ella/ -o ella-sd1.5-tsc-t5xl.safetensors
+git clone https://huggingface.co/QQGYLab/ELLA/  /content/ComfyUI/models/ella_encoder
+git clone https://github.com/kijai/ComfyUI-LivePortraitKJ
+git clone https://huggingface.co/Kijai/LivePortrait_safetensors /content/ComfyUI/models/liveportrait
+git clone https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved
+git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
+git clone https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet
+
+git clone https://github.com/spacepxl/ComfyUI-Image-Filters
+pip install -q -r ComfyUI-Image-Filters/requirements.txt
+git clone https://github.com/Nourepide/ComfyUI-Allor
+bash content/ComfyUI/custom_nodes/ComfyUI-Allor/install.sh
+git clone https://github.com/EllangoK/ComfyUI-post-processing-nodes
+
+git clone https://github.com/ethansmith2000/comfy-todo
+git clone https://github.com/JettHu/ComfyUI-TCD
+git clone https://github.com/BlenderNeko/ComfyUI_Cutoff
+git clone https://github.com/evanspearman/ComfyMath
+pip install -q -r ComfyMath/requirements.txt

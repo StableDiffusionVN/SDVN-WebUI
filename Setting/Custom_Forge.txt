@@ -1,0 +1,3 @@
+#Nhập link github theo từng dòng để cài extension list của riêng bạn từ phiên chạy tiếp theo
+https://github.com/richrobber2/canvas-zoom
+https://github.com/zanllp/sd-webui-infinite-image-browsing
