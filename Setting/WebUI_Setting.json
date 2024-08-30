@@ -68,7 +68,7 @@
     "training_enable_tensorboard": false,
     "training_tensorboard_save_images": false,
     "training_tensorboard_flush_every": 120,
-    "sd_model_checkpoint": "BaseRealistic-Vision-v5.safetensors [15012c538f]",
+    "sd_model_checkpoint": "RealisticVision-v5.safetensors [15012c538f]",
     "sd_checkpoint_cache": 0,
     "sd_vae_checkpoint_cache": 0,
     "sd_vae": "Automatic",
