@@ -5,6 +5,5 @@ git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/SD
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/SDVN/extensions/Dynamic-prompts
 git clone https://github.com/hako-mikan/sd-webui-supermerger /content/SDVN/extensions/Supermerger
 git clone https://github.com/Bing-su/Adetailer /content/SDVN/extensions/A2-Adetailer
-git clone https://github.com/Bing-su/sd-webui-tunnels /content/SDVN/extensions/sd-webui-tunnels
 pip install insightface
 pip install basicsr    

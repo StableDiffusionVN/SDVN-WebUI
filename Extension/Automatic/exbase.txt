@@ -15,7 +15,6 @@ git clone https://github.com/uwidev/sd_extension-prompt_formatter /content/SDVN/
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/SDVN/extensions/Ultimate-upscale
 git clone https://github.com/continue-revolution/sd-webui-animatediff /content/SDVN/extensions/Animatediff
 git clone https://github.com/light-and-ray/sd-webui-lama-cleaner-masked-content /content/SDVN/extensions/Lama-cleaner-masked-content
-git clone https://github.com/Bing-su/sd-webui-tunnels /content/SDVN/extensions/sd-webui-tunnels
 git clone https://github.com/huchenlei/sd-webui-controlnet-evaclip /content/SDVN/extensions/sd-webui-controlnet-evaclip
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt -d /content/SDVN/extensions/Animatediff/model/ -o mm_sd_v15_v2.ckpt
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth -d /content/SDVN/models/sam -o sam_vit_l_0b3195.pth
