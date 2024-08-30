@@ -1,3 +1,3 @@
-https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SDXL/Real/Leosam-HelloWorldXL_v7.safetensors@=HelloWorldXL_v7.safetensors
-https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SD15/Real/RealisticVision-v5.safetensors@=RealisticVision-v5.safetensors
-https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SD15/Real/RealisticVision-v51.inpainting.safetensors@=RealisticVision-v51.inpainting.safetensors
+https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SDXL/Real/Leosam-HelloWorldXL_v7.safetensors@=HelloWorldXL_v7
+https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SD15/Real/RealisticVision-v5.safetensors@=RealisticVision-v5
+https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SD15/Real/RealisticVision-v51.inpainting.safetensors@=RealisticVision-v51.inpainting
