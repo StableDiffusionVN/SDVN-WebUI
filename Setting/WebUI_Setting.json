@@ -35,7 +35,7 @@
     "save_to_dirs": true,
     "grid_save_to_dirs": false,
     "use_save_to_dirs_for_ui": false,
-    "directories_filename_pattern": "[model_name]",
+    "directories_filename_pattern": "[model_name]/[date]",
     "directories_max_prompt_words": 8,
     "ESRGAN_tile": 192,
     "ESRGAN_tile_overlap": 8,
