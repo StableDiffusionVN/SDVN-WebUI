@@ -13,6 +13,7 @@ git clone https://github.com/phamhungd/RoopSD /content/SDVN/extensions/RoopSD
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/inswapper_128.onnx -d /content/SDVN/extensions/RoopSD/models  -o inswapper_128.onnx
 git clone https://github.com/uwidev/sd_extension-prompt_formatter /content/SDVN/extensions/Prompt_formatter
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/SDVN/extensions/Ultimate-upscale
+git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/SDVN/extensions/Multidiffusion-upscaler
 git clone https://github.com/continue-revolution/sd-webui-animatediff /content/SDVN/extensions/Animatediff
 git clone https://github.com/light-and-ray/sd-webui-lama-cleaner-masked-content /content/SDVN/extensions/Lama-cleaner-masked-content
 git clone https://github.com/huchenlei/sd-webui-controlnet-evaclip /content/SDVN/extensions/sd-webui-controlnet-evaclip

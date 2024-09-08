@@ -1,7 +1,7 @@
 git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/SDVN/extensions/AR-helper
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/SDVN/extensions/Dynamic-prompts
 git clone https://github.com/huchenlei/sd-webui-openpose-editor /content/SDVN/extensions/OpenposeEditor
-git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/SDVN/extensions/ultimate-upscale-for-automatic1111
+git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/SDVN/extensions/Ultimate-upscale
 pip install insightface
 aria2c --console-log-level=error --summary-interval=10 -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Clip/clip_l.safetensors -d /content/SDVN/models/text_encoder -o clip_l.safetensors
 aria2c --console-log-level=error --summary-interval=10 -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Clip/t5xxl_fp8_e4m3fn.safetensors -d /content/SDVN/models/text_encoder -o t5xxl_fp8_e4m3fn.safetensors
