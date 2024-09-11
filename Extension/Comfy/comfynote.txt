@@ -115,3 +115,5 @@ git clone https://github.com/EeroHeikkinen/ComfyUI-eesahesNodes
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-eesahesNodes/requirements.txt
 git clone https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_bitsandbytes_NF4/requirements.txt
+
+pip install triton
