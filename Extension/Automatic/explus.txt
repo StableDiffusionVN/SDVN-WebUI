@@ -11,3 +11,4 @@ git clone https://github.com/light-and-ray/sd-webui-replacer /content/SDVN/exten
 git clone https://github.com/safubuki/sd-webui-latent-regional-helper /content/SDVN/extensions/Latent-regional-helper
 git clone https://github.com/MNeMoNiCuZ/sd-webui-thumbnailizer /content/SDVN/extensions/Thumbnailizer
 git clone https://github.com/hnmr293/sd-webui-cutoff /content/SDVN/extensions/sd-webui-cutoff
+git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete /content/SDVN/extensions/Tagcomplete
