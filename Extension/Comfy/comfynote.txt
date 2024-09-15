@@ -97,7 +97,6 @@ git clone https://github.com/storyicon/comfyui_segment_anything
 pip install -q -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
 git clone https://github.com/phamhungd/ComfyUI-BiRefNet
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-BiRefNet/requirements.txt
-git clone https://huggingface.co/ViperYX/BiRefNet /content/ComfyUI/models/BiRefNet
 git clone https://github.com/BadCafeCode/masquerade-nodes-comfyui
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
