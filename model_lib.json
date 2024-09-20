@@ -58,5 +58,7 @@
     "Flux_schnell_Q4KS.gguf": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Unet/flux1-schnell-Q4_K_S.gguf",
     "AdamXL-v3.safetensors": "https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SDXL/Art/AdamV3.safetensors",
     "PhotographyProv8.safetensors": "https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SD15/Real/PhotographyProv8.safetensors",
-    "Flux-schnell-nf4.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux-schnell-nf4.safetensors"
+    "Flux-schnell-nf4.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux-schnell-nf4.safetensors",
+    "SDVN11-Ghibli-Flux_nf4-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_nf4-hyper.safetensors",
+    "SDVN11-Ghibli-Flux_fp8-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_fp8-hyper.safetensors"
 }
