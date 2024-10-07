@@ -76,8 +76,6 @@ pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_essentials/requirements.
 git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 
-git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
-pip install -q -r ComfyUI-Impact-Pack/requirements.txt
 git clone https://github.com/jags111/efficiency-nodes-comfyui
 pip install -q -r efficiency-nodes-comfyui/requirements.txt
 git clone https://github.com/WASasquatch/was-node-suite-comfyui
