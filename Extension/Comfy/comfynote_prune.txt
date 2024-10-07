@@ -52,3 +52,8 @@ git clone https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_bitsandbytes_NF4/requirements.txt
 
 pip install triton
+
+git clone https://github.com/balazik/ComfyUI-PuLID-Flux
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-PuLID-Flux/requirements.txt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/QuanSun/EVA-CLIP/blob/main/EVA02_CLIP_L_336_psz14_s6B.pt -d /content/ComfyUI/models/clip -o EVA02_CLIP_L_336_psz14_s6B.pt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/ComfyUI/models/pulid -o pulid_flux_v0.9.0.safetensors
