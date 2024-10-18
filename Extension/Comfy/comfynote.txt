@@ -92,6 +92,7 @@ pip install -q -r ComfyUI_LayerStyle/requirements.txt
 git clone https://github.com/11dogzi/Comfyui-ergouzi-Nodes
 pip install -q -r Comfyui-ergouzi-Nodes/requirements.txt
 git clone https://github.com/storyicon/comfyui_segment_anything
+pip install -U timm==1.0.9
 pip install -q -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
 git clone https://github.com/phamhungd/ComfyUI-BiRefNet
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-BiRefNet/requirements.txt

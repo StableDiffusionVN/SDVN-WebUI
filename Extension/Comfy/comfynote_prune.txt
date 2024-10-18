@@ -34,6 +34,7 @@ git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
 
 git clone https://github.com/storyicon/comfyui_segment_anything
+pip install -U timm==1.0.9
 pip install -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
