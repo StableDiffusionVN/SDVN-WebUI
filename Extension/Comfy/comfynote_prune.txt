@@ -14,9 +14,7 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.bin  -d /content/ComfyUI/models/ipadapter -o ip-adapter-plus_sd15.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter_sdxl_vit-h.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-plus_sdxl_vit-h.bin
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid_sd15.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sd15.bin
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid_sdxl.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sdxl.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors  -d /content/ComfyUI/models/clip_vision/ -o  CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
 
@@ -40,7 +38,6 @@ git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
 
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt -d /content/ComfyUI/models/vae -o VAE84.vae.pt
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/control-lora/resolve/main/revision/clip_vision_g.safetensors -d /content/ComfyUI/models/clip_vision -o clip_vision_g.safetensor
 
 git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
 wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
