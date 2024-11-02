@@ -33,6 +33,11 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors  -d /content/ComfyUI/models/clip_vision/ -o CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors  -d /content/ComfyUI/models/clip_vision/ -o CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors
 
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
+python /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/install.py
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
+pip install ultralytics
+
 git clone https://github.com/cubiq/ComfyUI_InstantID
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/InstantX/InstantID/resolve/main/ip-adapter.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
 git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
