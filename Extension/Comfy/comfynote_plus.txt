@@ -22,3 +22,24 @@ git clone https://github.com/JettHu/ComfyUI-TCD
 git clone https://github.com/BlenderNeko/ComfyUI_Cutoff
 git clone https://github.com/evanspearman/ComfyMath
 pip install -q -r ComfyMath/requirements.txt
+
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x_NMKD-Siax_200k.pth -d /content/ComfyUI/models/upscale_models -o 4x_NMKD-Siax_200k.pth
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/madebyollin/taesd/raw/main/taesdxl_decoder.pth -d /content/ComfyUI/models/vae_approx -o taesdxl_decoder.pth
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/control-lora/resolve/main/revision/clip_vision_g.safetensors -d /content/ComfyUI/models/clip_vision -o clip_vision_g.safetensor
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/Anime-fp16.vae.pt -d /content/ComfyUI/models/vae -o Anime.vae.pt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors -d /content/ComfyUI/models/vae -o sdxl_vae.safetensors
+
+git clone https://github.com/kijai/ComfyUI-SUPIR
+pip install -q -r ComfyUI-SUPIR/requirements.txt
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kijai/SUPIR_pruned/resolve/main/SUPIR-v0F_fp16.safetensors -d /content/ComfyUI/models/checkpoints -o SUPIR-v0F_fp16.safetensors
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kijai/SUPIR_pruned/resolve/main/SUPIR-v0Q_fp16.safetensors -d /content/ComfyUI/models/checkpoints -o SUPIR-v0Q_fp16.safetensors
+
+git clone https://github.com/nullquant/ComfyUI-BrushNet
+pip install -q -r ComfyUI-BrushNet/requirements.txt
+git clone https://huggingface.co/phamhungd/brushnet /content/ComfyUI/models/inpaint
+git clone https://github.com/huchenlei/ComfyUI-layerdiffusion
+pip install -q -r ComfyUI-layerdiffusion/requirements.txt
+
+git clone https://github.com/ZHO-ZHO-ZHO/ComfyUI-Gemini
+git clone https://github.com/sipherxyz/comfyui-art-venture
+pip install -q -r sipherxyz/comfyui-art-venture/requirements.txt
