@@ -5,7 +5,7 @@
     "txt2img/Negative prompt/value": "",
     "txt2img/Styles/visible": true,
     "txt2img/Styles/value": [
-        "BasePrompt"
+        ""
     ],
     "txt2img/Sampling method/visible": true,
     "txt2img/Sampling method/value": "Euler a",
