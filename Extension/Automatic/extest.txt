@@ -1,1 +1,0 @@
-git clone https://github.com/hako-mikan/sd-webui-traintrain /content/SDVN/extensions/sd-webui-traintrain
