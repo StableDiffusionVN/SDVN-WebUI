@@ -64,6 +64,7 @@ git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
 
 git clone https://github.com/kijai/ComfyUI-Florence2
+mkdir /content/ComfyUI/models/LLM 
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
 git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
 git clone https://github.com/Stability-AI/stability-ComfyUI-nodes
