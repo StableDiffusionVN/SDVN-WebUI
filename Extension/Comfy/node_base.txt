@@ -17,17 +17,14 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sd15.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sdxl.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors  -d /content/ComfyUI/models/clip_vision/ -o  CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
-
 git clone https://github.com/cubiq/ComfyUI_InstantID
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/InstantX/InstantID/resolve/main/ip-adapter.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Basecontrolnet/resolve/main/InstantID/adapter_instant_id_sdxl.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
 git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
 
 git clone https://github.com/yolain/ComfyUI-Easy-Use
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.txt
 git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
-git clone https://github.com/jags111/efficiency-nodes-comfyui
-pip install -q -r efficiency-nodes-comfyui/requirements.txt
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
 
@@ -41,16 +38,4 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 
 git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
 wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
-pip install -q comfy-cli
-
-git clone https://github.com/EeroHeikkinen/ComfyUI-eesahesNodes
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-eesahesNodes/requirements.txt
-git clone https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_bitsandbytes_NF4/requirements.txt
-
 pip install triton
-
-git clone https://github.com/balazik/ComfyUI-PuLID-Flux
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-PuLID-Flux/requirements.txt
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/QuanSun/EVA-CLIP/blob/main/EVA02_CLIP_L_336_psz14_s6B.pt -d /content/ComfyUI/models/clip -o EVA02_CLIP_L_336_psz14_s6B.pt
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/ComfyUI/models/pulid -o pulid_flux_v0.9.0.safetensors

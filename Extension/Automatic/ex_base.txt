@@ -3,9 +3,7 @@ git clone https://github.com/fkunn1326/openpose-editor /content/SDVN/extensions/
 git clone https://github.com/phamhungd/sd-webui-lora-block-weight /content/SDVN/extensions/Block-weight
 git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/SDVN/extensions/AR-helper
 git clone https://github.com/adieyal/sd-dynamic-prompts /content/SDVN/extensions/Dynamic-prompts
-git clone https://github.com/hako-mikan/sd-webui-supermerger /content/SDVN/extensions/Supermerger
 git clone https://github.com/Bing-su/Adetailer /content/SDVN/extensions/A2-Adetailer
-git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/SDVN/extensions/Ultimate-upscale
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/SDVN/extensions/Multidiffusion-upscaler
 pip install insightface
 pip install basicsr

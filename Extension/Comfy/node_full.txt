@@ -31,21 +31,8 @@ pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements
 pip install ultralytics
 
 git clone https://github.com/cubiq/ComfyUI_InstantID
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/InstantX/InstantID/resolve/main/ip-adapter.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Basecontrolnet/resolve/main/InstantID/adapter_instant_id_sdxl.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
 git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
-
-git clone https://github.com/kijai/ComfyUI-IC-Light
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/huchenlei/IC-Light-ldm/resolve/main/iclight_sd15_fbc_unet_ldm.safetensors -d /content/ComfyUI/models/unet -o iclight_sd15_fbc_unet_ldm.safetensors
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/huchenlei/IC-Light-ldm/resolve/main/iclight_sd15_fc_unet_ldm.safetensors -d /content/ComfyUI/models/unet -o iclight_sd15_fc_unet_ldm.safetensors
-git clone https://github.com/huchenlei/ComfyUI-IC-Light-Native
-git clone https://github.com/kijai/ComfyUI-KJNodes
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-KJNodes/requirements.txt
-
-git clone https://github.com/Gourieff/comfyui-reactor-node
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/inswapper_128.onnx -d /content/ComfyUI/models/insightface -o inswapper_128.onnx
-pip install -r /content/ComfyUI/custom_nodes/comfyui-reactor-node/requirements.txt
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -d /content/ComfyUI/custom_nodes/comfyui-reactor-node/models/facerestore_models -o codeformer.pth
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -d /content/ComfyUI/custom_nodes/comfyui-reactor-node/models/facerestore_models -o GFPGANv1.4.pth
 
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt -d /content/ComfyUI/models/vae -o VAE84.vae.pt
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
@@ -66,10 +53,6 @@ pip install -q -r ComfyUI-Inspire-Pack/requirements.txt
 git clone https://github.com/wallish77/wlsh_nodes
 pip install -q -r /content/ComfyUI/custom_nodes/wlsh_nodes/requirements.txt
 
-git clone https://github.com/chflame163/ComfyUI_LayerStyle
-pip install -q -r ComfyUI_LayerStyle/requirements.txt
-git clone https://github.com/11dogzi/Comfyui-ergouzi-Nodes
-pip install -q -r Comfyui-ergouzi-Nodes/requirements.txt
 git clone https://github.com/storyicon/comfyui_segment_anything
 pip install -q -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
 git clone https://github.com/phamhungd/ComfyUI-BiRefNet
@@ -80,6 +63,8 @@ pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
 
+git clone https://github.com/kijai/ComfyUI-Florence2
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
 git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
 git clone https://github.com/Stability-AI/stability-ComfyUI-nodes
 pip install -q -r /content/ComfyUI/custom_nodes/stability-ComfyUI-nodes/requirements.txt
