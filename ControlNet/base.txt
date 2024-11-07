@@ -1,4 +1,5 @@
-https://huggingface.co/StableDiffusionVN/Prunedcontrolnet/resolve/main/control_instant_id_sdxl.safetensors
+https://huggingface.co/StableDiffusionVN/Basecontrolnet/resolve/main/InstantID/adapter_instant_id_sdxl.bin
+https://huggingface.co/StableDiffusionVN/Basecontrolnet/resolve/main/InstantID/control_instant_id_sdxl.safetensors
 https://huggingface.co/StableDiffusionVN/Prunedcontrolnet/resolve/main/control_v11f1p_sd15_depth.safetensors
 https://huggingface.co/StableDiffusionVN/Prunedcontrolnet/resolve/main/control_v11p_sd15_canny.safetensors
 https://huggingface.co/StableDiffusionVN/Prunedcontrolnet/resolve/main/control_v11p_sd15_lineart.safetensors
