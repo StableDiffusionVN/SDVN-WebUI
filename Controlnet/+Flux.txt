@@ -1,0 +1,1 @@
+https://huggingface.co/StableDiffusionVN/FluxControlnet/resolve/main/Instant_flux-union.safetensors

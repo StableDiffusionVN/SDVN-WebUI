@@ -1,0 +1,13 @@
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ControlLora/kataragi_img_Blur_sdxl-lora256.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ControlLora/kataragi_lineartXL-sdxl-lora256.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ControlLora/kataragi_recolor-sdxl-lora256.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ControlLora/softedge_mistoLine-sdxl-lora256.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ControlLora/xinsir_canny-sdxl-lora256.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ControlLora/xinsir_scribble-sdxl-lora256.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/Lite/sdxl_dw_openpose.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/Lite/sdxl_normal_dsine.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ip-adapter/ip-adapter-faceid-plusv2_sdxl.bin
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ip-adapter/ip-adapter-plus_composition_sdxl.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/ip-adapter/ip-adapter_pulid_sdxl.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/xinsir/xinsir_tile-sdxl.safetensors
+https://huggingface.co/StableDiffusionVN/XLControlnet/resolve/main/xinsir/xinsir_union_promax-sdxl.safetensors
