@@ -1,0 +1,7 @@
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Basev11/control_v11e_sd15_shuffle.safetensors
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Co-adapter/coadapter-sketch-sd15v1.pth
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Extra/LightAndDark-sd15.safetensors
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Extra/RecolorSD15-sd15.safetensors
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Extra/OutfitToOutfit-sd15.safetensors
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Extra/TheBoxDepth-sd15.safetensors
+https://huggingface.co/StableDiffusionVN/Extracontrolnet/resolve/main/Extra/openpose_PipeFace-sd15.pth
