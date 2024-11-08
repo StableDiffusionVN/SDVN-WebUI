@@ -69,11 +69,6 @@ git clone https://github.com/Stability-AI/stability-ComfyUI-nodes
 pip install -q -r /content/ComfyUI/custom_nodes/stability-ComfyUI-nodes/requirements.txt
 wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
 
-git clone https://github.com/EeroHeikkinen/ComfyUI-eesahesNodes
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-eesahesNodes/requirements.txt
-git clone https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_bitsandbytes_NF4/requirements.txt
-
 pip install triton
 
 git clone https://github.com/balazik/ComfyUI-PuLID-Flux
