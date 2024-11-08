@@ -27,6 +27,13 @@ git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
 python /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/install.py
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
 pip install ultralytics
+git clone https://github.com/ethansmith2000/comfy-todo
+git clone https://github.com/evanspearman/ComfyMath
+git clone https://github.com/JettHu/ComfyUI-TCD
+git clone https://github.com/sipherxyz/comfyui-art-venture
+pip install -q -r comfyui-art-venture/requirements.txt
+git clone https://github.com/BlenderNeko/ComfyUI_Cutoff
+pip install -q -r ComfyMath/requirements.txt
 
 git clone https://github.com/cubiq/ComfyUI_InstantID
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Basecontrolnet/resolve/main/InstantID/adapter_instant_id_sdxl.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin

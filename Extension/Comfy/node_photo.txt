@@ -3,11 +3,8 @@ pip install -q -r ComfyUI-Image-Filters/requirements.txt
 git clone https://github.com/Nourepide/ComfyUI-Allor
 bash content/ComfyUI/custom_nodes/ComfyUI-Allor/install.sh
 git clone https://github.com/EllangoK/ComfyUI-post-processing-nodes
-git clone https://github.com/ethansmith2000/comfy-todo
-git clone https://github.com/JettHu/ComfyUI-TCD
-git clone https://github.com/BlenderNeko/ComfyUI_Cutoff
-git clone https://github.com/evanspearman/ComfyMath
-pip install -q -r ComfyMath/requirements.txt
+git clone https://github.com/11dogzi/Comfyui-ergouzi-Nodes
+pip install -q -r Comfyui-ergouzi-Nodes/requirements.txt
 
 git clone https://github.com/kijai/ComfyUI-SUPIR
 pip install -q -r ComfyUI-SUPIR/requirements.txt
@@ -25,10 +22,6 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Sta
 
 git clone https://github.com/huchenlei/ComfyUI-layerdiffusion
 pip install -q -r ComfyUI-layerdiffusion/requirements.txt
-git clone https://github.com/sipherxyz/comfyui-art-venture
-pip install -q -r comfyui-art-venture/requirements.txt
-git clone https://github.com/11dogzi/Comfyui-ergouzi-Nodes
-pip install -q -r Comfyui-ergouzi-Nodes/requirements.txt
 
 git clone https://github.com/Gourieff/comfyui-reactor-node
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/inswapper_128.onnx -d /content/ComfyUI/models/insightface -o inswapper_128.onnx
