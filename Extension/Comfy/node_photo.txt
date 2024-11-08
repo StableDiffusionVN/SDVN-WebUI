@@ -26,9 +26,7 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Sta
 git clone https://github.com/huchenlei/ComfyUI-layerdiffusion
 pip install -q -r ComfyUI-layerdiffusion/requirements.txt
 git clone https://github.com/sipherxyz/comfyui-art-venture
-pip install -q -r sipherxyz/comfyui-art-venture/requirements.txt
-git clone https://github.com/chflame163/ComfyUI_LayerStyle
-pip install -q -r ComfyUI_LayerStyle/requirements.txt
+pip install -q -r comfyui-art-venture/requirements.txt
 git clone https://github.com/11dogzi/Comfyui-ergouzi-Nodes
 pip install -q -r Comfyui-ergouzi-Nodes/requirements.txt
 
