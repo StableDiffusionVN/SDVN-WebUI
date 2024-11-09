@@ -4,6 +4,8 @@ git clone https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet
 git clone https://github.com/bmad4ever/comfyui_bmad_nodes
 pip install -q -r /content/ComfyUI/custom_nodes/comfyui_bmad_nodes/requirements.txt
 git clone https://github.com/cubiq/ComfyUI_FaceAnalysis
+rm -r /content/ComfyUI/custom_nodes/ComfyUI_FaceAnalysis/dlib
+git clone https://huggingface.co/matt3ounstable/dlib_predictor_recognition /content/ComfyUI/custom_nodes/ComfyUI_FaceAnalysis/dlib
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_FaceAnalysis/requirements.txt
 git clone https://github.com/theUpsider/ComfyUI-Logic
 git clone https://github.com/mav-rik/facerestore_cf
