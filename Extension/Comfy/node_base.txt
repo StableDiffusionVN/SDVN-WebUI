@@ -37,5 +37,8 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
 
 git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
+git clone https://github.com/kijai/ComfyUI-Florence2
+mkdir /content/ComfyUI/models/LLM 
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
 wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
 pip install triton
