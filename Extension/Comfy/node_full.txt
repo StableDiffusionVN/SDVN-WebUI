@@ -57,7 +57,8 @@ git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack
 pip install -q -r ComfyUI-Inspire-Pack/requirements.txt
 git clone https://github.com/wallish77/wlsh_nodes
 pip install -q -r /content/ComfyUI/custom_nodes/wlsh_nodes/requirements.txt
-
+git clone https://github.com/chflame163/ComfyUI_LayerStyle
+pip install blend_modes
 git clone https://github.com/storyicon/comfyui_segment_anything
 pip install -q -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
 git clone https://github.com/phamhungd/ComfyUI-BiRefNet
