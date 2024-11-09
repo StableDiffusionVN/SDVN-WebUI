@@ -20,5 +20,5 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kij
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Kijai/SUPIR_pruned/resolve/main/SUPIR-v0Q_fp16.safetensors -d /content/ComfyUI/models/checkpoints -o SUPIR-v0Q_fp16.safetensors
 git clone https://github.com/kijai/ComfyUI-segment-anything-2
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-segment-anything-2/requirements.txt
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -d /content/ComfyUI/custom_nodes/comfyui-reactor-node/models/facerestore_models -o codeformer.pth
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -d /content/ComfyUI/custom_nodes/comfyui-reactor-node/models/facerestore_models -o GFPGANv1.4.pth
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -d /content/ComfyUI/models/facerestore_models -o codeformer.pth
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -d /content/ComfyUI/models/facerestore_models -o GFPGANv1.4.pth
