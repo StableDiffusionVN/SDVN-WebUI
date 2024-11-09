@@ -1,13 +1,13 @@
 git clone https://github.com/Fannovel16/ComfyUI-Video-Matting
-pip install -q -r pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Video-Matting/requirements.txt
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Video-Matting/requirements.txt
 git clone https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet
 git clone https://github.com/bmad4ever/comfyui_bmad_nodes
-pip install -q -r pip install -q -r /content/ComfyUI/custom_nodes/comfyui_bmad_nodes/requirements.txt
+pip install -q -r /content/ComfyUI/custom_nodes/comfyui_bmad_nodes/requirements.txt
 git clone https://github.com/cubiq/ComfyUI_FaceAnalysis
-pip install -q -r pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_FaceAnalysis/requirements.txt
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_FaceAnalysis/requirements.txt
 git clone https://github.com/theUpsider/ComfyUI-Logic
 git clone https://github.com/mav-rik/facerestore_cf
-pip install -q -r pip install -q -r /content/ComfyUI/custom_nodes/facerestore_cf/requirements.txt
+pip install -q -r /content/ComfyUI/custom_nodes/facerestore_cf/requirements.txt
 git clone https://github.com/TRI3D-LC/tri3d-comfyui-nodes
 pip install -q -r pip install -q -r /content/ComfyUI/custom_nodes/tri3d-comfyui-nodes/requirements.txt
 git clone https://github.com/un-seen/comfyui-tensorops
