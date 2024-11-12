@@ -3,4 +3,8 @@ git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 git clone https://github.com/yolain/ComfyUI-Easy-Use
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
+git clone https://github.com/space-nuko/nui-suite
+git clone https://github.com/adieyal/comfyui-dynamicprompts
+pip install --upgrade -q -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/requirements.txt
+python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
