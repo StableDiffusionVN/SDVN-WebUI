@@ -1,420 +1,405 @@
 const defaultGraph = {
-    "last_node_id": 69,
-    "last_link_id": 114,
-    "nodes": [
-      {
-        "id": 8,
-        "type": "VAEDecode",
-        "pos": {
-          "0": 1178,
-          "1": 91
-        },
-        "size": {
-          "0": 210,
-          "1": 46
-        },
-        "flags": {},
-        "order": 5,
-        "mode": 0,
-        "inputs": [
-          {
-            "name": "samples",
-            "type": "LATENT",
-            "link": 66
-          },
-          {
-            "name": "vae",
-            "type": "VAE",
-            "link": 88
-          }
-        ],
-        "outputs": [
-          {
-            "name": "IMAGE",
-            "type": "IMAGE",
-            "links": [
-              9
-            ],
-            "slot_index": 0
-          }
-        ],
-        "properties": {
-          "Node name for S&R": "VAEDecode"
-        },
-        "widgets_values": []
+  "last_node_id": 10,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": {
+        "0": 863,
+        "1": 186
       },
-      {
-        "id": 9,
-        "type": "SaveImage",
-        "pos": {
-          "0": 1422,
-          "1": 88
-        },
-        "size": {
-          "0": 356.08502197265625,
-          "1": 499.8143310546875
-        },
-        "flags": {},
-        "order": 6,
-        "mode": 0,
-        "inputs": [
-          {
-            "name": "images",
-            "type": "IMAGE",
-            "link": 9
-          }
-        ],
-        "outputs": [],
-        "properties": {
-          "Node name for S&R": "SaveImage"
-        },
-        "widgets_values": [
-          "ComfyUI"
-        ]
+      "size": {
+        "0": 315,
+        "1": 262
       },
-      {
-        "id": 69,
-        "type": "CLIPTextEncode",
-        "pos": {
-          "0": 408,
-          "1": 89
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1
         },
-        "size": {
-          "0": 400,
-          "1": 200
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 4
         },
-        "flags": {},
-        "order": 3,
-        "mode": 0,
-        "inputs": [
-          {
-            "name": "clip",
-            "type": "CLIP",
-            "link": 111
-          }
-        ],
-        "outputs": [
-          {
-            "name": "CONDITIONING",
-            "type": "CONDITIONING",
-            "links": [
-              112,
-              114
-            ],
-            "shape": 3
-          }
-        ],
-        "properties": {
-          "Node name for S&R": "CLIPTextEncode"
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
         },
-        "widgets_values": [
-          "Actual image of a smiling Vietnamese girl. With both hands she was holding a notice board with the word \"FluxAI by SDVN.ME\" large in the middle. Photos have high detail"
-        ]
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
       },
-      {
-        "id": 52,
-        "type": "CheckpointLoaderSimple",
-        "pos": {
-          "0": 63,
-          "1": 89
-        },
-        "size": {
-          "0": 315,
-          "1": 98
-        },
-        "flags": {},
-        "order": 0,
-        "mode": 0,
-        "inputs": [],
-        "outputs": [
-          {
-            "name": "MODEL",
-            "type": "MODEL",
-            "links": [
-              89
-            ],
-            "slot_index": 0,
-            "shape": 3
-          },
-          {
-            "name": "CLIP",
-            "type": "CLIP",
-            "links": [
-              111
-            ],
-            "slot_index": 1,
-            "shape": 3
-          },
-          {
-            "name": "VAE",
-            "type": "VAE",
-            "links": [
-              88
-            ],
-            "slot_index": 2,
-            "shape": 3
-          }
-        ],
-        "properties": {
-          "Node name for S&R": "CheckpointLoaderSimple"
-        },
-        "widgets_values": [
-          "Checkpoint/Flux_dev_v1-fp8.safetensors"
-        ]
-      },
-      {
-        "id": 53,
-        "type": "EmptyLatentImage",
-        "pos": {
-          "0": 499,
-          "1": 347
-        },
-        "size": {
-          "0": 303.3410339355469,
-          "1": 111.14437103271484
-        },
-        "flags": {},
-        "order": 1,
-        "mode": 0,
-        "inputs": [],
-        "outputs": [
-          {
-            "name": "LATENT",
-            "type": "LATENT",
-            "links": [
-              85
-            ],
-            "shape": 3
-          }
-        ],
-        "properties": {
-          "Node name for S&R": "EmptyLatentImage"
-        },
-        "widgets_values": [
-          768,
-          1152,
-          1
-        ]
-      },
-      {
-        "id": 44,
-        "type": "KSampler",
-        "pos": {
-          "0": 837,
-          "1": 93
-        },
-        "size": {
-          "0": 318.3961181640625,
-          "1": 487.5167236328125
-        },
-        "flags": {},
-        "order": 4,
-        "mode": 0,
-        "inputs": [
-          {
-            "name": "model",
-            "type": "MODEL",
-            "link": 89
-          },
-          {
-            "name": "positive",
-            "type": "CONDITIONING",
-            "link": 112
-          },
-          {
-            "name": "negative",
-            "type": "CONDITIONING",
-            "link": 114
-          },
-          {
-            "name": "latent_image",
-            "type": "LATENT",
-            "link": 85,
-            "slot_index": 3
-          }
-        ],
-        "outputs": [
-          {
-            "name": "LATENT",
-            "type": "LATENT",
-            "links": [
-              66
-            ],
-            "slot_index": 0,
-            "shape": 3
-          }
-        ],
-        "properties": {
-          "Node name for S&R": "KSampler"
-        },
-        "widgets_values": [
-          1,
-          "randomize",
-          20,
-          1,
-          "euler",
-          "simple",
-          1
-        ]
-      },
-      {
-        "id": 68,
-        "type": "Note",
-        "pos": {
-          "0": 65,
-          "1": 237
-        },
-        "size": {
-          "0": 312.59844970703125,
-          "1": 99.95023345947266
-        },
-        "flags": {},
-        "order": 2,
-        "mode": 0,
-        "inputs": [],
-        "outputs": [],
-        "properties": {
-          "text": ""
-        },
-        "widgets_values": [
-          "ComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
-        ],
-        "color": "#432",
-        "bgcolor": "#653"
-      }
-    ],
-    "links": [
-      [
-        9,
+      "widgets_values": [
+        156680208700286,
+        "randomize",
+        20,
         8,
-        0,
-        9,
-        0,
-        "IMAGE"
-      ],
-      [
-        66,
-        44,
-        0,
-        8,
-        0,
-        "LATENT"
-      ],
-      [
-        75,
-        10,
-        0,
-        8,
-        1,
-        "VAE"
-      ],
-      [
-        76,
-        12,
-        0,
-        44,
-        0,
-        "MODEL"
-      ],
-      [
-        77,
-        11,
-        0,
-        48,
-        0,
-        "CLIP"
-      ],
-      [
-        78,
-        10,
-        0,
-        30,
-        1,
-        "VAE"
-      ],
-      [
-        79,
-        12,
-        0,
-        51,
-        0,
-        "MODEL"
-      ],
-      [
-        80,
-        11,
-        0,
-        51,
-        1,
-        "CLIP"
-      ],
-      [
-        81,
-        10,
-        0,
-        51,
-        2,
-        "VAE"
-      ],
-      [
-        85,
-        53,
-        0,
-        44,
-        3,
-        "LATENT"
-      ],
-      [
-        88,
-        52,
-        2,
-        8,
-        1,
-        "VAE"
-      ],
-      [
-        89,
-        52,
-        0,
-        44,
-        0,
-        "MODEL"
-      ],
-      [
-        111,
-        52,
-        1,
-        69,
-        0,
-        "CLIP"
-      ],
-      [
-        112,
-        69,
-        0,
-        44,
-        1,
-        "CONDITIONING"
-      ],
-      [
-        114,
-        69,
-        0,
-        44,
-        2,
-        "CONDITIONING"
+        "euler",
+        "normal",
+        1
       ]
-    ],
-    "groups": [],
-    "config": {},
-    "extra": {
-      "ds": {
-        "scale": 1.2100000000000002,
-        "offset": [
-          -17.50027989171706,
-          25.803375029812276
-        ]
-      }
     },
-    "version": 0.4
-  }
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 1209,
+        "1": 188
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1451,
+        "1": 189
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 513,
+        "1": 616
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        512,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 413,
+        "1": 389
+      },
+      "size": {
+        "0": 425.27801513671875,
+        "1": 180.6060791015625
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(text, watermark:1.3)"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 415,
+        "1": 186
+      },
+      "size": {
+        "0": 422.84503173828125,
+        "1": 164.31304931640625
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), portrait girl in the city"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 74,
+        "1": 192
+      },
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            3,
+            5
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            8
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "Checkpoint/RealisticVision51.safetensors"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Note",
+      "pos": {
+        "0": 71,
+        "1": 347
+      },
+      "size": [
+        315.7266486933699,
+        143.80173860655128
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "SD text - to - img workflow\n\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Sub Web: trainlora.vn | shakker.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      3,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      4,
+      6,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      5,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      6,
+      7,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      8,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      9,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.2100000000000002,
+      "offset": [
+        4.682155632310376,
+        -47.292627902786144
+      ]
+    }
+  },
+  "version": 0.4
+}
