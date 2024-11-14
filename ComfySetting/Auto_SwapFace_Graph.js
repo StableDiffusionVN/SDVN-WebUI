@@ -3,16 +3,154 @@ const defaultGraph = {
   "last_link_id": 64,
   "nodes": [
     {
+      "id": 41,
+      "type": "Label (rgthree)",
+      "pos": {
+        "0": 1077,
+        "1": 746
+      },
+      "size": {
+        "0": 487.265625,
+        "1": 20
+      },
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "sdvn.me | comfy.vn | fluxai.vn | trainlora.vn | shakker.vn",
+      "properties": {
+        "fontSize": 20,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 42,
+      "type": "Label (rgthree)",
+      "pos": {
+        "0": 959,
+        "1": 688
+      },
+      "size": {
+        "0": 605.71875,
+        "1": 56
+      },
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "STABLEDIFFUSION.VN",
+      "properties": {
+        "fontSize": 56,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 38,
+      "type": "CryptoCatImage",
+      "pos": {
+        "0": 952,
+        "1": 121
+      },
+      "size": {
+        "0": 611.934326171875,
+        "1": 544.97998046875
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 57,
+          "label": "images"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "CryptoCatImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": {
+        "0": 243,
+        "1": 478
+      },
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34,
+            55
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "title": "Face",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Face.png",
+        "image"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
       "id": 33,
       "type": "ExcuteCryptoNode",
       "pos": {
-        "0": 655,
-        "1": 720
+        "0": 592,
+        "1": 120
       },
-      "size": [
-        341.6171902852369,
-        131.93406814847185
-      ],
+      "size": {
+        "0": 341.6171875,
+        "1": 131.93406677246094
+      },
       "flags": {},
       "order": 6,
       "mode": 0,
@@ -50,22 +188,47 @@ const defaultGraph = {
         "Node name for S&R": "ExcuteCryptoNode"
       },
       "widgets_values": [
-        "/content/SDVN-WebUI/Workflow/Auto_SwapFace/prompt.dat"
+        "/content/SDVN-WebUI/Workflow/Auto_Swap_Face.dat"
+      ]
+    },
+    {
+      "id": 43,
+      "type": "easy bookmark",
+      "pos": {
+        "0": 93,
+        "1": 48
+      },
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🔖 1",
+      "properties": {},
+      "widgets_values": [
+        "1",
+        1.2
       ]
     },
     {
       "id": 40,
       "type": "Note",
       "pos": {
-        "0": 659,
-        "1": 898
+        "0": 596,
+        "1": 298
       },
-      "size": [
-        337.2488939877733,
-        208.2118380182983
-      ],
+      "size": {
+        "0": 337.2489013671875,
+        "1": 208.2118377685547
+      },
       "flags": {},
-      "order": 0,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -73,116 +236,24 @@ const defaultGraph = {
         "text": ""
       },
       "widgets_values": [
-        "#Workflow Autoswap_Face by SDVN\n\nB1: Tải ảnh gốc cần thay đổi face và face cần thay đổi\nB2: Ấn Queue và đợi kết quả\n\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
+        "#Workflow Autoswap_Face by SDVN\n\nB1: Tải ảnh gốc cần thay đổi face và face cần thay đổi\nB2: Ấn Queue và đợi kết quả\n\nLưu ý:\n - Lần tạo ảnh đầu tiên sẽ lâu hơn một chút\n - Workflow chạy mượt với mọi size ảnh và GPU\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
       ],
       "color": "#432",
       "bgcolor": "#653"
     },
     {
-      "id": 41,
-      "type": "Label (rgthree)",
-      "pos": {
-        "0": 1140,
-        "1": 1346
-      },
-      "size": [
-        487.265625,
-        20
-      ],
-      "flags": {
-        "allow_interaction": true
-      },
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "sdvn.me | comfy.vn | fluxai.vn | trainlora.vn | shakker.vn",
-      "properties": {
-        "fontSize": 20,
-        "fontFamily": "Arial",
-        "fontColor": "#ffffff",
-        "textAlign": "left",
-        "backgroundColor": "transparent",
-        "padding": 0,
-        "borderRadius": 0
-      },
-      "color": "#fff0",
-      "bgcolor": "#fff0"
-    },
-    {
-      "id": 42,
-      "type": "Label (rgthree)",
-      "pos": {
-        "0": 1022,
-        "1": 1288
-      },
-      "size": [
-        605.71875,
-        56
-      ],
-      "flags": {
-        "allow_interaction": true
-      },
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "STABLEDIFFUSION.VN",
-      "properties": {
-        "fontSize": 56,
-        "fontFamily": "Arial",
-        "fontColor": "#ffffff",
-        "textAlign": "left",
-        "backgroundColor": "transparent",
-        "padding": 0,
-        "borderRadius": 0
-      },
-      "color": "#fff0",
-      "bgcolor": "#fff0"
-    },
-    {
-      "id": 38,
-      "type": "CryptoCatImage",
-      "pos": {
-        "0": 1015,
-        "1": 721
-      },
-      "size": [
-        611.9343252767924,
-        544.9799648676903
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 57,
-          "label": "images"
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "CryptoCatImage"
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 4,
       "type": "LoadImage",
       "pos": {
-        "0": 308,
-        "1": 716
+        "0": 245,
+        "1": 116
       },
       "size": {
         "0": 315,
         "1": 314
       },
       "flags": {},
-      "order": 3,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -217,77 +288,6 @@ const defaultGraph = {
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 5,
-      "type": "LoadImage",
-      "pos": {
-        "0": 306,
-        "1": 1078
-      },
-      "size": {
-        "0": 315,
-        "1": 314
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            34,
-            55
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "IMAGE"
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3,
-          "label": "MASK"
-        }
-      ],
-      "title": "Face",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "Face.png",
-        "image"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 43,
-      "type": "easy bookmark",
-      "pos": {
-        "0": 113,
-        "1": 675
-      },
-      "size": {
-        "0": 210,
-        "1": 82
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "🔖 1",
-      "properties": {},
-      "widgets_values": [
-        "1",
-        1.2
-      ]
     }
   ],
   "links": [
@@ -320,10 +320,10 @@ const defaultGraph = {
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2,
+      "scale": 1,
       "offset": [
-        -97,
-        -635
+        0.25390625,
+        -0.515625
       ]
     }
   },
