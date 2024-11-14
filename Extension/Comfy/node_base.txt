@@ -42,4 +42,5 @@ mkdir /content/ComfyUI/models/LLM
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
 wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
 pip install triton
-https://github.com/RiceRound/ComfyUI_CryptoCat
+git clone https://github.com/RiceRound/ComfyUI_CryptoCat
+pip install -q -r /content/ComfyUI/custom_nodesComfyUI_CryptoCat/requirements.txt
