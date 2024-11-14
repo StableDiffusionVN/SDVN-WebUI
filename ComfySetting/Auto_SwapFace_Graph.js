@@ -50,7 +50,7 @@ const defaultGraph = {
         "Node name for S&R": "ExcuteCryptoNode"
       },
       "widgets_values": [
-        "/content/ComfyUI/web/templates/Auto_SwapFace/prompt.dat"
+        "/content/SDVN-WebUI/Workflow/Auto_SwapFace/prompt.dat"
       ]
     },
     {
