@@ -13,6 +13,7 @@ git clone https://github.com/uwidev/sd_extension-prompt_formatter /content/SDVN/
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/SDVN/extensions/Ultimate-upscale
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/SDVN/extensions/Multidiffusion-upscaler
 git clone https://github.com/huchenlei/sd-webui-controlnet-evaclip /content/SDVN/extensions/sd-webui-controlnet-evaclip
+git clone https://github.com/hako-mikan/sd-webui-cd-tuner /content/SDVN/extensions/sd-webui-cd-tuner
 pip install insightface
 pip install basicsr
 pip install triton

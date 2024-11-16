@@ -1,4 +1,3 @@
-https://github.com/54rt1n/ComfyUI-DareMerge
+git clone https://github.com/54rt1n/ComfyUI-DareMerge
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-DareMerge/requirements.txt
-https://github.com/larsupb/LoRA-Merger-ComfyUI
-https://github.com/RiceRound/ComfyUI_CryptoCat
+git clone https://github.com/larsupb/LoRA-Merger-ComfyUI

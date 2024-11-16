@@ -1,6 +1,5 @@
 git clone https://github.com/arenasys/stable-diffusion-webui-model-toolkit /content/SDVN/extensions/Model-toolkit
 git clone https://github.com/klimaleksus/stable-diffusion-webui-embedding-merge /content/SDVN/extensions/Embedding-merge
 git clone https://github.com/Akegarasu/sd-webui-model-converter /content/SDVN/extensions/Model-converter
-git clone https://github.com/tkalayci71/embedding-inspector /content/SDVN/extensions/Embedding-inspector
 git clone https://github.com/bbc-mc/sdweb-merge-board /content/SDVN/extensions/Merge-board
 git clone https://github.com/wkpark/sd-webui-model-mixer /content/SDVN/extensions/Model-mixer
