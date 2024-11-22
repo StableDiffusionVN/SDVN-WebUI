@@ -85,3 +85,5 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/ComfyUI/models/pulid -o pulid_flux_v0.9.0.safetensors
 git clone https://github.com/RiceRound/ComfyUI_CryptoCat
 pip install -q -r /content/ComfyUI/custom_nodesComfyUI_CryptoCat/requirements.txt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/flux1-redux-dev.safetensors -d /content/ComfyUI/models/style_models -o flux1-redux-dev.safetensors
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/siglip-so400m-patch14-384.safetensors -d /content/ComfyUI/models/style_models -o siglip-so400m-patch14-384.safetensors
