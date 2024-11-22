@@ -1,0 +1,20 @@
+comfyui:
+    base_path:  /content/drive/MyDrive/SD-Data/ComfyModel
+    is_default: false
+    clip: clip
+    clip_vision: clip_vision
+    controlnet: controlnet
+    diffusion_models: |
+                 diffusion_models
+                 unet
+    diffusers: diffusers
+    upscale_models: upscale_models
+    vae: vae
+    inpaint: inpaint
+    checkpoints: checkpoints
+    insightface: insightface
+    facerestore_models: facerestore_models
+    ipadapter: ipadapter
+    instantid: instantid
+    antelopev2: antelopev2
+    pulid: pulid
