@@ -3,7 +3,6 @@ git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 git clone https://github.com/yolain/ComfyUI-Easy-Use
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
-git clone https://github.com/space-nuko/nui-suite
 git clone https://github.com/adieyal/comfyui-dynamicprompts
 pip install --upgrade -q -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/requirements.txt
 python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
