@@ -1,6 +1,7 @@
 git clone https://github.com/ltdrdata/ComfyUI-Manager
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
-git clone https://github.com/yolain/ComfyUI-Easy-Use
+git clone https://github.com/Fannovel16/comfyui_controlnet_aux
+pip install -r /content/ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/adieyal/comfyui-dynamicprompts
