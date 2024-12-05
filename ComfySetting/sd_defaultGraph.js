@@ -1,18 +1,43 @@
 const defaultGraph = {
-  "last_node_id": 10,
-  "last_link_id": 9,
+  "last_node_id": 15,
+  "last_link_id": 24,
   "nodes": [
+    {
+      "id": 10,
+      "type": "Note",
+      "pos": [
+        71,
+        347
+      ],
+      "size": [
+        315.7266540527344,
+        143.80174255371094
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "SD text - to - img workflow\n\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Sub Web: trainlora.vn | shakker.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
     {
       "id": 8,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1209,
-        "1": 188
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1467,
+        133
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {},
       "order": 6,
       "mode": 0,
@@ -20,12 +45,12 @@ const defaultGraph = {
         {
           "name": "samples",
           "type": "LATENT",
-          "link": 7
+          "link": 20
         },
         {
           "name": "vae",
           "type": "VAE",
-          "link": 8
+          "link": 13
         }
       ],
       "outputs": [
@@ -44,41 +69,16 @@ const defaultGraph = {
       "widgets_values": []
     },
     {
-      "id": 10,
-      "type": "Note",
-      "pos": {
-        "0": 71,
-        "1": 347
-      },
-      "size": {
-        "0": 315.7266540527344,
-        "1": 143.80174255371094
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "SD text - to - img workflow\n\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Sub Web: trainlora.vn | shakker.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
+      "id": 11,
+      "type": "SDVN Load Checkpoint",
+      "pos": [
+        70.2109375,
+        133
       ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 74,
-        "1": 192
-      },
-      "size": {
-        "0": 315,
-        "1": 98
-      },
+      "size": [
+        315,
+        170
+      ],
       "flags": {},
       "order": 1,
       "mode": 0,
@@ -88,155 +88,44 @@ const defaultGraph = {
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            1
-          ],
-          "slot_index": 0
+            21
+          ]
         },
         {
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            3,
-            5
-          ],
-          "slot_index": 1
+            22
+          ]
         },
         {
           "name": "VAE",
           "type": "VAE",
           "links": [
-            8
-          ],
-          "slot_index": 2
+            13
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
+        "Node name for S&R": "SDVN Load Checkpoint"
       },
       "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
         "Checkpoint/RealisticVision51.safetensors"
-      ]
-    },
-    {
-      "id": 5,
-      "type": "EmptyLatentImage",
-      "pos": {
-        "0": 513,
-        "1": 616
-      },
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            2
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        512,
-        768,
-        1
-      ]
-    },
-    {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 413,
-        "1": 389
-      },
-      "size": {
-        "0": 425.27801513671875,
-        "1": 180.6060791015625
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 5
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            6
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "(text, watermark, 3d, 2d:1.3)"
-      ]
-    },
-    {
-      "id": 6,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 415,
-        "1": 186
-      },
-      "size": {
-        "0": 422.84503173828125,
-        "1": 164.31304931640625
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            4
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), portrait girl in the garden"
       ]
     },
     {
       "id": 9,
       "type": "SaveImage",
-      "pos": {
-        "0": 1451,
-        "1": 189
-      },
+      "pos": [
+        1698,
+        133
+      ],
       "size": [
-        327.29296875,
-        520.23046875
+        380.6171875,
+        620.796875
       ],
       "flags": {},
       "order": 7,
@@ -257,15 +146,154 @@ const defaultGraph = {
       ]
     },
     {
-      "id": 3,
-      "type": "KSampler",
-      "pos": {
-        "0": 863,
-        "1": 186
-      },
+      "id": 15,
+      "type": "SDVN Load Lora",
+      "pos": [
+        398.2421875,
+        134.77734375
+      ],
       "size": [
         315,
-        474
+        198
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 21
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            23
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            24
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN Load Lora"
+      },
+      "widgets_values": [
+        false,
+        "",
+        "model.safetensors",
+        "None",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        807.20703125,
+        448.93359375
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            16
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        768,
+        1
+      ]
+    },
+    {
+      "id": 12,
+      "type": "SDVN CLIP Text Encode",
+      "pos": [
+        724.30859375,
+        133
+      ],
+      "size": [
+        400.13671875,
+        267.68359375
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            18
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN CLIP Text Encode"
+      },
+      "widgets_values": [
+        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), white shirt, portrait girl,in the city, white dress",
+        "(text, watermark, 3d, nsfw, 2d)",
+        589181340273576,
+        "randomize"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "SDVN KSampler",
+      "pos": [
+        1136,
+        133
+      ],
+      "size": [
+        315,
+        614
       ],
       "flags": {},
       "order": 5,
@@ -274,22 +302,30 @@ const defaultGraph = {
         {
           "name": "model",
           "type": "MODEL",
-          "link": 1
+          "link": 23
         },
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 4
+          "link": 17
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 6
+          "link": 18,
+          "shape": 7
         },
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 2
+          "link": 16,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -297,90 +333,36 @@ const defaultGraph = {
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            7
+            20
           ],
           "slot_index": 0
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "KSampler"
+        "Node name for S&R": "SDVN KSampler"
       },
       "widgets_values": [
+        "None",
+        "None",
         1,
-        "randomize",
         20,
         8,
         "euler",
         "normal",
-        1
+        1,
+        "randomize",
+        false,
+        1024,
+        1024
       ]
     }
   ],
   "links": [
-    [
-      1,
-      4,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
-      2,
-      5,
-      0,
-      3,
-      3,
-      "LATENT"
-    ],
-    [
-      3,
-      4,
-      1,
-      6,
-      0,
-      "CLIP"
-    ],
-    [
-      4,
-      6,
-      0,
-      3,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      5,
-      4,
-      1,
-      7,
-      0,
-      "CLIP"
-    ],
-    [
-      6,
-      7,
-      0,
-      3,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      7,
-      3,
-      0,
-      8,
-      0,
-      "LATENT"
-    ],
-    [
-      8,
-      4,
-      2,
-      8,
-      1,
-      "VAE"
-    ],
     [
       9,
       8,
@@ -388,6 +370,78 @@ const defaultGraph = {
       9,
       0,
       "IMAGE"
+    ],
+    [
+      13,
+      11,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      16,
+      5,
+      0,
+      13,
+      3,
+      "LATENT"
+    ],
+    [
+      17,
+      12,
+      0,
+      13,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      18,
+      12,
+      1,
+      13,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      20,
+      13,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      21,
+      11,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      22,
+      11,
+      1,
+      15,
+      1,
+      "CLIP"
+    ],
+    [
+      23,
+      15,
+      0,
+      13,
+      0,
+      "MODEL"
+    ],
+    [
+      24,
+      15,
+      1,
+      12,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [],
@@ -396,10 +450,11 @@ const defaultGraph = {
     "ds": {
       "scale": 1,
       "offset": [
-        0,
-        0
+        -22.47265625,
+        38.484375
       ]
-    }
+    },
+    "ue_links": []
   },
   "version": 0.4
 }
