@@ -22,10 +22,10 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin -d /content/ComfyUI/models/ipadapter -o ip-adapter-faceid-plusv2_sdxl.bin
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors  -d /content/ComfyUI/models/clip_vision/ -o CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
 
-#git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
-#python /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/install.py
-#pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
-#pip install ultralytics
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
+python /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/install.py
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
+pip install ultralytics
 git clone https://github.com/ethansmith2000/comfy-todo
 git clone https://github.com/evanspearman/ComfyMath
 git clone https://github.com/JettHu/ComfyUI-TCD
