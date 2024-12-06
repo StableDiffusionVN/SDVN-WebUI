@@ -236,55 +236,6 @@ const defaultGraph = {
       ]
     },
     {
-      "id": 12,
-      "type": "SDVN CLIP Text Encode",
-      "pos": [
-        724.30859375,
-        133
-      ],
-      "size": [
-        400.13671875,
-        267.68359375
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 24
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            17
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            18
-          ],
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SDVN CLIP Text Encode"
-      },
-      "widgets_values": [
-        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), white shirt, portrait girl,in the city, white dress",
-        "(text, watermark, 3d, nsfw, 2d)",
-        589181340273576,
-        "randomize"
-      ]
-    },
-    {
       "id": 13,
       "type": "SDVN KSampler",
       "pos": [
@@ -359,6 +310,56 @@ const defaultGraph = {
         false,
         1024,
         1024
+      ]
+    },
+    {
+      "id": 12,
+      "type": "SDVN CLIP Text Encode",
+      "pos": [
+        724.30859375,
+        133
+      ],
+      "size": [
+        400.13671875,
+        267.68359375
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            18
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN CLIP Text Encode"
+      },
+      "widgets_values": [
+        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), white shirt, portrait girl,in the city, white dress",
+        "(text, watermark, 3d, nsfw, 2d)",
+        "None",
+        0,
+        "fixed"
       ]
     }
   ],
