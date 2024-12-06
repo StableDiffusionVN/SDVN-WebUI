@@ -1,31 +1,31 @@
 const defaultGraph = {
-  "last_node_id": 69,
-  "last_link_id": 114,
+  "last_node_id": 73,
+  "last_link_id": 127,
   "nodes": [
     {
       "id": 8,
       "type": "VAEDecode",
-      "pos": {
-        "0": 1178,
-        "1": 91
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
+      "pos": [
+        1171.804931640625,
+        78.25852966308594
+      ],
+      "size": [
+        210,
+        46
+      ],
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
           "name": "samples",
           "type": "LATENT",
-          "link": 66
+          "link": 120
         },
         {
           "name": "vae",
           "type": "VAE",
-          "link": 88
+          "link": 123
         }
       ],
       "outputs": [
@@ -46,16 +46,16 @@ const defaultGraph = {
     {
       "id": 9,
       "type": "SaveImage",
-      "pos": {
-        "0": 1422,
-        "1": 88
-      },
-      "size": {
-        "0": 356.08502197265625,
-        "1": 499.8143310546875
-      },
+      "pos": [
+        1398.259033203125,
+        78.25852966308594
+      ],
+      "size": [
+        356.08502197265625,
+        499.8143310546875
+      ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -73,55 +73,63 @@ const defaultGraph = {
       ]
     },
     {
-      "id": 69,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 408,
-        "1": 89
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
+      "id": 70,
+      "type": "SDVN CLIP Text Encode",
+      "pos": [
+        413.1962585449219,
+        78.25852966308594
+      ],
+      "size": [
+        404.4905700683594,
+        286.24639892578125
+      ],
       "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 111
+          "link": 127
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
+          "name": "positive",
           "type": "CONDITIONING",
           "links": [
-            112,
-            114
+            116
           ],
-          "shape": 3
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "SDVN CLIP Text Encode"
       },
       "widgets_values": [
-        "Actual image of a smiling Vietnamese girl. With both hands she was holding a notice board with the word \"FluxAI by SDVN.ME\" large in the middle. Photos have high detail"
+        "Actual image of a smiling Vietnamese girl. With both hands she was holding a notice board with the word \"FluxAI by SDVN.ME\" large in the middle. Photos have high detail",
+        "",
+        "None",
+        0,
+        "fixed"
       ]
     },
     {
       "id": 53,
       "type": "EmptyLatentImage",
-      "pos": {
-        "0": 499,
-        "1": 347
-      },
-      "size": {
-        "0": 303.3410339355469,
-        "1": 111.14437103271484
-      },
+      "pos": [
+        512.1409301757812,
+        409.4597473144531
+      ],
+      "size": [
+        303.3410339355469,
+        111.14437103271484
+      ],
       "flags": {},
       "order": 0,
       "mode": 0,
@@ -131,7 +139,7 @@ const defaultGraph = {
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            85
+            119
           ],
           "shape": 3
         }
@@ -146,40 +154,47 @@ const defaultGraph = {
       ]
     },
     {
-      "id": 44,
-      "type": "KSampler",
-      "pos": {
-        "0": 837,
-        "1": 93
-      },
-      "size": {
-        "0": 318.3961181640625,
-        "1": 487.5167236328125
-      },
+      "id": 71,
+      "type": "SDVN KSampler",
+      "pos": [
+        838.7449951171875,
+        78.25852966308594
+      ],
+      "size": [
+        315,
+        614
+      ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 89
+          "link": 126
         },
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 112
+          "link": 116
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 114
+          "link": null,
+          "shape": 7
         },
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 85,
-          "slot_index": 3
+          "link": 119,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
         }
       ],
       "outputs": [
@@ -187,38 +202,151 @@ const defaultGraph = {
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            66
+            120
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "KSampler"
+        "Node name for S&R": "SDVN KSampler"
       },
       "widgets_values": [
+        "Flux",
+        "None",
         1,
-        "randomize",
         20,
-        1,
+        8,
         "euler",
-        "simple",
+        "normal",
+        0,
+        "randomize",
+        false,
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": 73,
+      "type": "SDVN Load Lora",
+      "pos": [
+        77.71563720703125,
+        78.25852966308594
+      ],
+      "size": [
+        315,
+        198
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 124
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 125
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            126
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            127
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN Load Lora"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "None",
+        1,
         1
+      ]
+    },
+    {
+      "id": 72,
+      "type": "SDVN Load Checkpoint",
+      "pos": [
+        -260.14373779296875,
+        78.25852966308594
+      ],
+      "size": [
+        315,
+        170
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            124
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            125
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            123
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN Load Checkpoint"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "Checkpoint/Flux_dev_v1-fp8.safetensors"
       ]
     },
     {
       "id": 68,
       "type": "Note",
-      "pos": {
-        "0": 65,
-        "1": 237
-      },
+      "pos": [
+        -261.73828125,
+        318.4453125
+      ],
       "size": [
-        315.7266486933699,
-        143.80173860655128
+        315.7266540527344,
+        143.80174255371094
       ],
       "flags": {},
-      "order": 1,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -230,57 +358,6 @@ const defaultGraph = {
       ],
       "color": "#432",
       "bgcolor": "#653"
-    },
-    {
-      "id": 52,
-      "type": "CheckpointLoaderSimple",
-      "pos": {
-        "0": 63,
-        "1": 89
-      },
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            89
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            111
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            88
-          ],
-          "slot_index": 2,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "Checkpoint/Flux_dev_v1-fp8.safetensors"
-      ]
     }
   ],
   "links": [
@@ -291,14 +368,6 @@ const defaultGraph = {
       9,
       0,
       "IMAGE"
-    ],
-    [
-      66,
-      44,
-      0,
-      8,
-      0,
-      "LATENT"
     ],
     [
       75,
@@ -357,64 +426,81 @@ const defaultGraph = {
       "VAE"
     ],
     [
-      85,
+      116,
+      70,
+      0,
+      71,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      119,
       53,
       0,
-      44,
+      71,
       3,
       "LATENT"
     ],
     [
-      88,
-      52,
+      120,
+      71,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      123,
+      72,
       2,
       8,
       1,
       "VAE"
     ],
     [
-      89,
-      52,
+      124,
+      72,
       0,
-      44,
+      73,
       0,
       "MODEL"
     ],
     [
-      111,
-      52,
+      125,
+      72,
       1,
-      69,
-      0,
+      73,
+      1,
       "CLIP"
     ],
     [
-      112,
-      69,
+      126,
+      73,
       0,
-      44,
-      1,
-      "CONDITIONING"
+      71,
+      0,
+      "MODEL"
     ],
     [
-      114,
-      69,
+      127,
+      73,
+      1,
+      70,
       0,
-      44,
-      2,
-      "CONDITIONING"
+      "CLIP"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2100000000000002,
+      "scale": 0.6830134553650705,
       "offset": [
-        12.271902533136819,
-        31.158430981511383
+        422.31009592513084,
+        274.15418220942036
       ]
-    }
+    },
+    "ue_links": []
   },
   "version": 0.4
 }
