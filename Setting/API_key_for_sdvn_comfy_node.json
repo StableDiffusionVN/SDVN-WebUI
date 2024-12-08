@@ -1,0 +1,5 @@
+{
+    "Gemini":"https://aistudio.google.com/app/apikey",
+    "HuggingFace": "https://huggingface.co/settings/tokens",
+    "OpenAI": "https://platform.openai.com/settings/organization/api-keys"
+}
