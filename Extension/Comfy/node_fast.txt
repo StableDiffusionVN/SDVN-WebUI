@@ -9,4 +9,3 @@ pip install --upgrade -q -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts
 python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
 git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
-pip install -q -r /content/ComfyUI/custom_nodes/SDVN_Comfy_node/requirements.txt

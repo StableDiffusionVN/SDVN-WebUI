@@ -44,4 +44,3 @@ pip install triton
 git clone https://github.com/RiceRound/ComfyUI_CryptoCat
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
 git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
-pip install -q -r /content/ComfyUI/custom_nodes/SDVN_Comfy_node/requirements.txt
