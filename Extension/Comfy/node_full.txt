@@ -74,7 +74,6 @@ pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.t
 git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
 git clone https://github.com/Stability-AI/stability-ComfyUI-nodes
 pip install -q -r /content/ComfyUI/custom_nodes/stability-ComfyUI-nodes/requirements.txt
-wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
 
 pip install triton
 

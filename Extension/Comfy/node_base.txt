@@ -39,7 +39,6 @@ git clone https://github.com/pythongosssss/ComfyUI-WD14-Tagger
 git clone https://github.com/kijai/ComfyUI-Florence2
 mkdir /content/ComfyUI/models/LLM 
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
-wget https://raw.githubusercontent.com/catscandrive/comfyui-imagesubfolders/main/loadImageWithSubfolders.py
 pip install triton
 git clone https://github.com/RiceRound/ComfyUI_CryptoCat
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
