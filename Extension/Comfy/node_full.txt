@@ -26,13 +26,6 @@ git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
 python /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/install.py
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
 pip install ultralytics
-git clone https://github.com/ethansmith2000/comfy-todo
-git clone https://github.com/evanspearman/ComfyMath
-git clone https://github.com/JettHu/ComfyUI-TCD
-git clone https://github.com/sipherxyz/comfyui-art-venture
-pip install -q -r comfyui-art-venture/requirements.txt
-git clone https://github.com/BlenderNeko/ComfyUI_Cutoff
-pip install -q -r ComfyMath/requirements.txt
 
 git clone https://github.com/cubiq/ComfyUI_InstantID
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Basecontrolnet/resolve/main/InstantID/adapter_instant_id_sdxl.bin -d /content/ComfyUI/models/instantid -o ip-adapter.bin
@@ -47,15 +40,13 @@ git clone https://github.com/cubiq/ComfyUI_essentials
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_essentials/requirements.txt
 git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
+git clone https://github.com/RiceRound/ComfyUI_CryptoCat
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
 
 git clone https://github.com/jags111/efficiency-nodes-comfyui
 pip install -q -r efficiency-nodes-comfyui/requirements.txt
 git clone https://github.com/WASasquatch/was-node-suite-comfyui
 pip install -r /content/ComfyUI/custom_nodes/was-node-suite-comfyui/requirements.txt
-git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack
-pip install -q -r ComfyUI-Inspire-Pack/requirements.txt
-git clone https://github.com/wallish77/wlsh_nodes
-pip install -q -r /content/ComfyUI/custom_nodes/wlsh_nodes/requirements.txt
 git clone https://github.com/chflame163/ComfyUI_LayerStyle
 pip install blend_modes
 git clone https://github.com/storyicon/comfyui_segment_anything
@@ -77,12 +68,10 @@ pip install -q -r /content/ComfyUI/custom_nodes/stability-ComfyUI-nodes/requirem
 
 pip install triton
 
-git clone https://github.com/balazik/ComfyUI-PuLID-Flux
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-PuLID-Flux/requirements.txt
+https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-PuLID-Flux-Enhanced/requirements.txt
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/QuanSun/EVA-CLIP/blob/main/EVA02_CLIP_L_336_psz14_s6B.pt -d /content/ComfyUI/models/clip -o EVA02_CLIP_L_336_psz14_s6B.pt
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/ComfyUI/models/pulid -o pulid_flux_v0.9.0.safetensors
-git clone https://github.com/RiceRound/ComfyUI_CryptoCat
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
 git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/flux1-redux-dev.safetensors -d /content/ComfyUI/models/style_models -o flux1-redux-dev.safetensors
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/sigclip_vision_patch14_384.safetensors -d /content/ComfyUI/models/clip_vision -o sigclip_vision_patch14_384.safetensors

@@ -6,6 +6,7 @@ pip install --upgrade -q -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts
 python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
 git clone https://github.com/Fannovel16/comfyui_controlnet_aux
 pip install -r /content/ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
+git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
 
 git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus
 pip install insightface
@@ -26,6 +27,8 @@ git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
+git clone https://github.com/RiceRound/ComfyUI_CryptoCat
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
 
 git clone https://github.com/storyicon/comfyui_segment_anything
 pip install -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
@@ -40,6 +43,9 @@ git clone https://github.com/kijai/ComfyUI-Florence2
 mkdir /content/ComfyUI/models/LLM 
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
 pip install triton
-git clone https://github.com/RiceRound/ComfyUI_CryptoCat
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
-git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/flux1-redux-dev.safetensors -d /content/ComfyUI/models/style_models -o flux1-redux-dev.safetensors
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/sigclip_vision_patch14_384.safetensors -d /content/ComfyUI/models/clip_vision -o sigclip_vision_patch14_384.safetensors
+https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-PuLID-Flux-Enhanced/requirements.txt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/QuanSun/EVA-CLIP/blob/main/EVA02_CLIP_L_336_psz14_s6B.pt -d /content/ComfyUI/models/clip -o EVA02_CLIP_L_336_psz14_s6B.pt
+aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/ComfyUI/models/pulid -o pulid_flux_v0.9.0.safetensors
