@@ -60,5 +60,5 @@
     "Flux-schnell-nf4.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux-schnell-nf4.safetensors",
     "SDVN11-Ghibli-Flux_nf4-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_nf4-hyper.safetensors",
     "SDVN11-Ghibli-Flux_fp8-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_fp8-hyper.safetensors",
-    "Flux_dev_v1_fill.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux_dev_v1_fill.safetensors"
+    "Flux_dev_v1_fill-fp8.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux_dev_v1_fill-fp8.safetensors"
 }
