@@ -1,6 +1,6 @@
 const defaultGraph = {
-  "last_node_id": 73,
-  "last_link_id": 127,
+  "last_node_id": 74,
+  "last_link_id": 129,
   "nodes": [
     {
       "id": 8,
@@ -73,53 +73,6 @@ const defaultGraph = {
       ]
     },
     {
-      "id": 70,
-      "type": "SDVN CLIP Text Encode",
-      "pos": [
-        413.1962585449219,
-        78.25852966308594
-      ],
-      "size": [
-        404.4905700683594,
-        286.24639892578125
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 127
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            116
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SDVN CLIP Text Encode"
-      },
-      "widgets_values": [
-        "Actual image of a smiling Vietnamese girl. With both hands she was holding a notice board with the word \"FluxAI by SDVN.ME\" large in the middle. Photos have high detail",
-        "",
-        "None",
-        0,
-        "fixed"
-      ]
-    },
-    {
       "id": 53,
       "type": "EmptyLatentImage",
       "pos": [
@@ -176,7 +129,7 @@ const defaultGraph = {
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 116
+          "link": 129
         },
         {
           "name": "negative",
@@ -227,7 +180,8 @@ const defaultGraph = {
         "randomize",
         false,
         1024,
-        1024
+        1024,
+        3.5
       ]
     },
     {
@@ -239,7 +193,7 @@ const defaultGraph = {
       ],
       "size": [
         315,
-        198
+        218
       ],
       "flags": {},
       "order": 3,
@@ -248,17 +202,19 @@ const defaultGraph = {
         {
           "name": "model",
           "type": "MODEL",
-          "link": 124
+          "link": 124,
+          "shape": 7
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 125
+          "link": 125,
+          "shape": 7
         }
       ],
       "outputs": [
         {
-          "name": "MODEL",
+          "name": "model",
           "type": "MODEL",
           "links": [
             126
@@ -266,12 +222,17 @@ const defaultGraph = {
           "slot_index": 0
         },
         {
-          "name": "CLIP",
+          "name": "clip",
           "type": "CLIP",
           "links": [
-            127
+            128
           ],
           "slot_index": 1
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": null
         }
       ],
       "properties": {
@@ -358,6 +319,53 @@ const defaultGraph = {
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 74,
+      "type": "SDVN CLIP Text Encode",
+      "pos": [
+        413,
+        78
+      ],
+      "size": [
+        402,
+        284
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 128
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            129
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN CLIP Text Encode"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "None",
+        "None",
+        0,
+        "randomize"
+      ]
     }
   ],
   "links": [
@@ -426,14 +434,6 @@ const defaultGraph = {
       "VAE"
     ],
     [
-      116,
-      70,
-      0,
-      71,
-      1,
-      "CONDITIONING"
-    ],
-    [
       119,
       53,
       0,
@@ -482,22 +482,30 @@ const defaultGraph = {
       "MODEL"
     ],
     [
-      127,
+      128,
       73,
       1,
-      70,
+      74,
       0,
       "CLIP"
+    ],
+    [
+      129,
+      74,
+      0,
+      71,
+      1,
+      "CONDITIONING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6830134553650705,
+      "scale": 0.9090909090909091,
       "offset": [
-        422.31009592513084,
-        274.15418220942036
+        518.477734375,
+        179.63482696281008
       ]
     },
     "ue_links": []

@@ -1,6 +1,6 @@
 const defaultGraph = {
-  "last_node_id": 15,
-  "last_link_id": 24,
+  "last_node_id": 18,
+  "last_link_id": 31,
   "nodes": [
     {
       "id": 10,
@@ -88,14 +88,14 @@ const defaultGraph = {
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            21
+            25
           ]
         },
         {
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            22
+            26
           ]
         },
         {
@@ -143,62 +143,6 @@ const defaultGraph = {
       },
       "widgets_values": [
         "ComfyUI"
-      ]
-    },
-    {
-      "id": 15,
-      "type": "SDVN Load Lora",
-      "pos": [
-        398.2421875,
-        134.77734375
-      ],
-      "size": [
-        315,
-        198
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 21
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 22
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            23
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            24
-          ],
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SDVN Load Lora"
-      },
-      "widgets_values": [
-        false,
-        "",
-        "model.safetensors",
-        "None",
-        1,
-        1
       ]
     },
     {
@@ -253,17 +197,17 @@ const defaultGraph = {
         {
           "name": "model",
           "type": "MODEL",
-          "link": 23
+          "link": 27
         },
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 17
+          "link": 30
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 18,
+          "link": 31,
           "shape": 7
         },
         {
@@ -309,19 +253,81 @@ const defaultGraph = {
         "randomize",
         false,
         1024,
-        1024
+        1024,
+        3.5
       ]
     },
     {
-      "id": 12,
+      "id": 16,
+      "type": "SDVN Load Lora",
+      "pos": [
+        398,
+        135
+      ],
+      "size": [
+        315,
+        218
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 25,
+          "shape": 7
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 26,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            27
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN Load Lora"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "None",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 18,
       "type": "SDVN CLIP Text Encode",
       "pos": [
-        724.30859375,
+        724,
         133
       ],
       "size": [
-        400.13671875,
-        267.68359375
+        400,
+        269
       ],
       "flags": {},
       "order": 4,
@@ -330,7 +336,7 @@ const defaultGraph = {
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 24
+          "link": 29
         }
       ],
       "outputs": [
@@ -338,17 +344,15 @@ const defaultGraph = {
           "name": "positive",
           "type": "CONDITIONING",
           "links": [
-            17
-          ],
-          "slot_index": 0
+            30
+          ]
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
           "links": [
-            18
-          ],
-          "slot_index": 1
+            31
+          ]
         }
       ],
       "properties": {
@@ -358,8 +362,9 @@ const defaultGraph = {
         "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), white shirt, portrait girl,in the city, white dress",
         "(text, watermark, 3d, nsfw, 2d)",
         "None",
+        "None",
         0,
-        "fixed"
+        "randomize"
       ]
     }
   ],
@@ -389,22 +394,6 @@ const defaultGraph = {
       "LATENT"
     ],
     [
-      17,
-      12,
-      0,
-      13,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      18,
-      12,
-      1,
-      13,
-      2,
-      "CONDITIONING"
-    ],
-    [
       20,
       13,
       0,
@@ -413,46 +402,62 @@ const defaultGraph = {
       "LATENT"
     ],
     [
-      21,
+      25,
       11,
       0,
-      15,
+      16,
       0,
       "MODEL"
     ],
     [
-      22,
+      26,
       11,
       1,
-      15,
+      16,
       1,
       "CLIP"
     ],
     [
-      23,
-      15,
+      27,
+      16,
       0,
       13,
       0,
       "MODEL"
     ],
     [
-      24,
-      15,
+      29,
+      16,
       1,
-      12,
+      18,
       0,
       "CLIP"
+    ],
+    [
+      30,
+      18,
+      0,
+      13,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      31,
+      18,
+      1,
+      13,
+      2,
+      "CONDITIONING"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.9090909090909091,
       "offset": [
-        -22.47265625,
-        38.484375
+        67.32734375000007,
+        183.74263946281
       ]
     },
     "ue_links": []
