@@ -3,31 +3,6 @@ const defaultGraph = {
   "last_link_id": 31,
   "nodes": [
     {
-      "id": 10,
-      "type": "Note",
-      "pos": [
-        71,
-        347
-      ],
-      "size": [
-        315.7266540527344,
-        143.80174255371094
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "SD text - to - img workflow\n\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Sub Web: trainlora.vn | shakker.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 8,
       "type": "VAEDecode",
       "pos": [
@@ -77,33 +52,38 @@ const defaultGraph = {
       ],
       "size": [
         315,
-        170
+        190
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "MODEL",
+          "name": "model",
           "type": "MODEL",
           "links": [
             25
           ]
         },
         {
-          "name": "CLIP",
+          "name": "clip",
           "type": "CLIP",
           "links": [
             26
           ]
         },
         {
-          "name": "VAE",
+          "name": "vae",
           "type": "VAE",
           "links": [
             13
           ]
+        },
+        {
+          "name": "ckpt_path",
+          "type": "STRING",
+          "links": null
         }
       ],
       "properties": {
@@ -157,7 +137,7 @@ const defaultGraph = {
         106
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -180,6 +160,146 @@ const defaultGraph = {
       ]
     },
     {
+      "id": 16,
+      "type": "SDVN Load Lora",
+      "pos": [
+        398,
+        135
+      ],
+      "size": [
+        315,
+        218
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 25,
+          "shape": 7
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 26,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            27
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "lora_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN Load Lora"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "None",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "type": "SDVN CLIP Text Encode",
+      "pos": [
+        724,
+        133
+      ],
+      "size": [
+        400,
+        269
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            30
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            31
+          ]
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDVN CLIP Text Encode"
+      },
+      "widgets_values": [
+        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), white shirt, portrait girl,in the city, white dress",
+        "(text, watermark, 3d, nsfw, 2d)",
+        "None",
+        "None",
+        289593738252285,
+        "randomize"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Note",
+      "pos": [
+        69.46601867675781,
+        364.55706787109375
+      ],
+      "size": [
+        315.7266540527344,
+        143.80174255371094
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "SD text - to - img workflow\n\nComfyUI Colab:\n- Creator: stablediffusion.vn\n- Website: sdvn.me | comfy.vn | fluxai.vn\n- Sub Web: trainlora.vn | shakker.vn\n- Document: bit.ly/sdvn-lib\n- Skills training: hungdiffusion.com"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 13,
       "type": "SDVN KSampler",
       "pos": [
@@ -188,7 +308,7 @@ const defaultGraph = {
       ],
       "size": [
         315,
-        614
+        638
       ],
       "flags": {},
       "order": 5,
@@ -255,116 +375,6 @@ const defaultGraph = {
         1024,
         1024,
         3.5
-      ]
-    },
-    {
-      "id": 16,
-      "type": "SDVN Load Lora",
-      "pos": [
-        398,
-        135
-      ],
-      "size": [
-        315,
-        218
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 25,
-          "shape": 7
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 26,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            27
-          ]
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            29
-          ]
-        },
-        {
-          "name": "info",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SDVN Load Lora"
-      },
-      "widgets_values": [
-        true,
-        "",
-        "model.safetensors",
-        "None",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 18,
-      "type": "SDVN CLIP Text Encode",
-      "pos": [
-        724,
-        133
-      ],
-      "size": [
-        400,
-        269
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 29
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            30
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            31
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SDVN CLIP Text Encode"
-      },
-      "widgets_values": [
-        "(best quality:1.2), (hyper realistic, raw photo, film gain:1.1), white shirt, portrait girl,in the city, white dress",
-        "(text, watermark, 3d, nsfw, 2d)",
-        "None",
-        "None",
-        0,
-        "randomize"
       ]
     }
   ],
@@ -454,13 +464,17 @@ const defaultGraph = {
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909091,
+      "scale": 0.786535781326515,
       "offset": [
-        67.32734375000007,
-        183.74263946281
+        278.0951102043975,
+        198.4159030211076
       ]
     },
-    "ue_links": []
+    "ue_links": [],
+    "node_versions": {
+      "comfy-core": "0.3.10",
+      "SDVN_Comfy_node": "d5ae4f45bb4c11f02eb407418e9b4e01fa3036de"
+    }
   },
   "version": 0.4
 }
