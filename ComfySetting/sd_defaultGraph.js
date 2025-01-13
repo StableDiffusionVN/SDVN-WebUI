@@ -113,7 +113,7 @@ const defaultGraph = {
         true,
         "",
         "model.safetensors",
-        "Checkpoint/RealisticVision51.safetensors"
+        "Checkpoint/RealisticVision-v5.safetensors"
       ]
     },
     {
