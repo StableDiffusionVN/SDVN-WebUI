@@ -1,5 +1,6 @@
 {
     "Gemini":"https://aistudio.google.com/app/apikey",
     "HuggingFace": "https://huggingface.co/settings/tokens",
-    "OpenAI": "https://platform.openai.com/settings/organization/api-keys"
+    "OpenAI": "https://platform.openai.com/settings/organization/api-keys",
+    "Deepseek": "https://platform.deepseek.com/api_keys"
 }
