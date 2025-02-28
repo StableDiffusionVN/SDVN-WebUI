@@ -17,13 +17,13 @@
     "SDVN1-Real.inpainting.safetensors": "https://civitai.com/api/download/models/153048",
     "SDVN5-3DCuteWave.inpainting.safetensors": "https://civitai.com/api/download/models/153052",
     "XXMix_9realisticSDXL.safetensors": "https://civitai.com/api/download/models/163192",
-    "LEOSAM-HelloWorldXL.safetensors": "https://civitai.com/api/download/models/338512",
+    "LEOSAM-HelloWorldXL.safetensors": "https://civitai.com/api/download/models/570138",
     "JuggernautXL-v9.safetensors": "https://civitai.com/api/download/models/357609",
     "ZavyChromaXL-v5.safetensors": "https://civitai.com/api/download/models/362861",
     "Samaritan3dCartoon-v4.safetensors": "https://civitai.com/api/download/models/144566",
     "DucHaiten-AIart-SDXL.safetensors": "https://civitai.com/api/download/models/136754",
     "CrystalClearXL.safetensors": "https://civitai.com/api/download/models/133832",
-    "JuggernautXL.safetensors": "https://civitai.com/api/download/models/152076",
+    "JuggernautXL.safetensors": "https://civitai.com/api/download/models/782002",
     "Chilloutmix.safetensors": "https://civitai.com/api/download/models/9474",
     "RealisticVision51.safetensors": "https://civitai.com/api/download/models/130072",
     "Deliberate.safetensors": "https://civitai.com/api/download/models/15236",
@@ -60,5 +60,11 @@
     "Flux-schnell-nf4.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux-schnell-nf4.safetensors",
     "SDVN11-Ghibli-Flux_nf4-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_nf4-hyper.safetensors",
     "SDVN11-Ghibli-Flux_fp8-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_fp8-hyper.safetensors",
-    "Flux_dev_v1_fill-fp8.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux_dev_v1_fill-fp8.safetensors"
+    "Flux_dev_v1_fill-fp8.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux_dev_v1_fill-fp8.safetensors",
+    "STOIQO-NewRealityXLPro.safetensors":"https://civitai.com/api/download/models/690310",
+    "RealVisXLv5.safetensors":"https://civitai.com/api/download/models/789646?type=Model&format=SafeTensor&size=full&fp=fp16",
+    "CharacterArtXL.safetensors": "https://huggingface.co/StableDiffusionVN/SDXL/resolve/main/Checkpoint/CharacterArtXL.safetensors",
+    "RealMythXL_v7.safetensors": "https://huggingface.co/StableDiffusionVN/SDXL/resolve/main/Checkpoint/RealMythXL_v7.safetensors",
+    "Illustrious-XL.safetensors": "https://civitai.com/api/download/models/889818?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+    "PonyDiffusionV6XL.safetensors":"https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16"
 }
