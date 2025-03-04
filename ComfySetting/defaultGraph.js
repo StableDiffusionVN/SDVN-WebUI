@@ -132,4 +132,4 @@ const defaultGraph = {
   config: {},
   extra: {},
   version: 0.4
-};
+}
