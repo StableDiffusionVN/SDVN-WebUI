@@ -7,6 +7,10 @@ git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/adieyal/comfyui-dynamicprompts
 pip install --upgrade -q -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/requirements.txt
 python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
+git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus
+pip install insightface
+git clone https://github.com/cubiq/ComfyUI_InstantID
+git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/flux1-redux-dev.safetensors -d /content/ComfyUI/models/style_models -o flux1-redux-dev.safetensors
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Redux/sigclip_vision_patch14_384.safetensors -d /content/ComfyUI/models/clip_vision -o sigclip_vision_patch14_384.safetensors
