@@ -14,7 +14,7 @@ comfyui:
     checkpoints: checkpoints
     insightface: insightface
     facerestore_models: facerestore_models
-    ipadapter: ipadapter
+    # ipadapter: ipadapter
     instantid: instantid
     antelopev2: antelopev2
     pulid: pulid
