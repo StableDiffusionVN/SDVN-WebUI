@@ -26,7 +26,6 @@ pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.tx
 git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
-pip install -q -r ComfyUI-Inpaint-CropAndStitch/requirements.txt
 git clone https://github.com/RiceRound/ComfyUI_CryptoCat
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_CryptoCat/requirements.txt
 
