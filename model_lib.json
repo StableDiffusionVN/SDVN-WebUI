@@ -59,12 +59,12 @@
     "PhotographyProv8.safetensors": "https://huggingface.co/StableDiffusionVN/Checkpoint/resolve/main/SD15/Real/PhotographyProv8.safetensors",
     "Flux-schnell-nf4.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux-schnell-nf4.safetensors",
     "SDVN11-Ghibli-Flux_nf4-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_nf4-hyper.safetensors",
-    "SDVN11-Ghibli-Flux_fp8-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_fp8-hyper.safetensors",
+    "SDVN11-Ghibli-Flux_fp8-hyper.safetensors": "https://huggingface.co/StableDiffusionVN/SDVN11-Ghibli-Flux/resolve/main/SDVN11-Ghibli-Flux_fp8-hyper.safetensors",    
     "Flux_dev_v1_fill-fp8.safetensors": "https://huggingface.co/StableDiffusionVN/Flux/resolve/main/Checkpoint/Flux_dev_v1_fill-fp8.safetensors",
     "STOIQO-NewRealityXLPro.safetensors":"https://civitai.com/api/download/models/690310",
-    "RealVisXLv5.safetensors":"https://civitai.com/api/download/models/789646?type=Model&format=SafeTensor&size=full&fp=fp16",
+    "RealVisXLv5.safetensors":"https://civitai.com/api/download/models/789646",
     "CharacterArtXL.safetensors": "https://huggingface.co/StableDiffusionVN/SDXL/resolve/main/Checkpoint/CharacterArtXL.safetensors",
     "RealMythXL_v7.safetensors": "https://huggingface.co/StableDiffusionVN/SDXL/resolve/main/Checkpoint/RealMythXL_v7.safetensors",
-    "Illustrious-XL.safetensors": "https://civitai.com/api/download/models/889818?type=Model&format=SafeTensor&size=pruned&fp=fp16",
-    "PonyDiffusionV6XL.safetensors":"https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16"
+    "Illustrious-XL.safetensors": "https://civitai.com/api/download/models/889818",
+    "PonyDiffusionV6XL.safetensors":"https://huggingface.co/LyliaEngine/Pony_Diffusion_V6_XL/blob/main/ponyDiffusionV6XL_v6StartWithThisOne.safetensors"
 }
