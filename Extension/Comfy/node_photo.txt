@@ -23,13 +23,6 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/Sta
 git clone https://github.com/huchenlei/ComfyUI-layerdiffusion
 pip install -q -r ComfyUI-layerdiffusion/requirements.txt
 
-#git clone https://github.com/Gourieff/ComfyUI-ReActor
-#pip install -r /content/ComfyUI/custom_nodes/ComfyUI-ReActor/requirements.txt
-#aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/inswapper_128.onnx -d /content/ComfyUI/models/insightface -o inswapper_128.onnx
-#aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth -d /content/ComfyUI/models/facerestore_models -o codeformer.pth
-#aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth -d /content/ComfyUI/models/facerestore_models -o GFPGANv1.4.pth
-#aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/detection/bbox/face_yolov8m.pt -d /content/ComfyUI/models/sams -o face_yolov8m.pt
-
 git clone https://github.com/kijai/ComfyUI-IC-Light
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/huchenlei/IC-Light-ldm/resolve/main/iclight_sd15_fbc_unet_ldm.safetensors -d /content/ComfyUI/models/unet -o iclight_sd15_fbc_unet_ldm.safetensors
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/huchenlei/IC-Light-ldm/resolve/main/iclight_sd15_fc_unet_ldm.safetensors -d /content/ComfyUI/models/unet -o iclight_sd15_fc_unet_ldm.safetensors
