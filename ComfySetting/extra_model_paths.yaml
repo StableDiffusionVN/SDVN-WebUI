@@ -15,7 +15,7 @@ comfyui:
     insightface: insightface
     facerestore_models: facerestore_models
     # ipadapter: ipadapter
-    instantid: instantid
+    # instantid: instantid
     antelopev2: antelopev2
     pulid: pulid
     style_models: style_models
