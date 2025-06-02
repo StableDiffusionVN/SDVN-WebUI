@@ -76,5 +76,3 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 git clone https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl
 git clone https://github.com/1038lab/ComfyUI-RMBG
 pip install -r /content/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
-git clone https://github.com/ToTheBeginning/ComfyUI-DreamO
-pip install -r /content/ComfyUI/custom_nodes/ComfyUI-DreamO/requirements.txt
