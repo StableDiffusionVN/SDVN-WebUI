@@ -1,4 +1,5 @@
 git clone https://github.com/ltdrdata/ComfyUI-Manager
+git clone https://github.com/rgthree/rgthree-comfy
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 git clone https://github.com/Fannovel16/comfyui_controlnet_aux
 pip install -r /content/ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
@@ -17,5 +18,3 @@ git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 git clone https://github.com/1038lab/ComfyUI-RMBG
 pip install -r /content/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
-git clone https://github.com/yolain/ComfyUI-Easy-Use
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.txt
