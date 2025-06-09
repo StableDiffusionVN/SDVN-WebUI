@@ -15,6 +15,7 @@ pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_InstantID/requirements.t
 git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
 git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
+pip install -r /content/ComfyUI/custom_nodes/SDVN_Comfy_node/requirements.txt
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 git clone https://github.com/1038lab/ComfyUI-RMBG
 pip install -r /content/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
