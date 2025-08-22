@@ -6,9 +6,6 @@ git clone https://github.com/melMass/comfy_mtb
 pip install -q -r comfy_mtb/requirements.txt
 git clone https://github.com/twri/sdxl_prompt_styler
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
-git clone https://github.com/adieyal/comfyui-dynamicprompts
-pip install --upgrade -r /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/requirements.txt
-python /content/ComfyUI/custom_nodes/comfyui-dynamicprompts/install.py
 
 git clone https://github.com/Fannovel16/comfyui_controlnet_aux
 pip install  -q -r /content/ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
