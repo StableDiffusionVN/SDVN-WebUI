@@ -130,6 +130,11 @@ const defaultGraph = {
   ],
   groups: [],
   config: {},
-  extra: {},
+  extra: {
+    ds: {
+      offset: [0, 0],
+      scale: 1
+    }
+  },
   version: 0.4
-}
+};
