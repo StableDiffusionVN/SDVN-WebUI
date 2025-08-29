@@ -1,9 +1,45 @@
 {
   "id": "6ea985c2-aa8f-4733-b0db-255b1f79fd53",
   "revision": 0,
-  "last_node_id": 78,
-  "last_link_id": 123,
+  "last_node_id": 90,
+  "last_link_id": 137,
   "nodes": [
+    {
+      "id": 75,
+      "type": "SaveImage",
+      "pos": [
+        1420,
+        230
+      ],
+      "size": [
+        380,
+        360
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 120
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.53",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": false
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
     {
       "id": 77,
       "type": "MarkdownNote",
@@ -20,6 +56,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
+      "title": "ℹ️ SDVN",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -31,6 +68,142 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 74,
+      "type": "98eae27a-68d6-421b-bfcb-47552514b41d",
+      "pos": [
+        1080,
+        230
+      ],
+      "size": [
+        330,
+        360
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 133
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 134
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 135
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            120
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.49",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "chân dung cô gái trẻ",
+        "None",
+        "Auto",
+        12,
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": 73,
+      "type": "2261bd8c-881b-421f-a5d4-3e63d13346bb",
+      "pos": [
+        730,
+        230
+      ],
+      "size": [
+        340,
+        360
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 116
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 117
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            133
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            134
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "lora_name": false,
+            "strength_model": false,
+            "strength_clip": false,
+            "lora_name_1": false,
+            "strength_model_1": false,
+            "strength_clip_1": false,
+            "lora_name_2": false,
+            "strength_model_2": false,
+            "lora_name_3": false,
+            "strength_model_3": false,
+            "strength_clip_2": false,
+            "strength_clip_3": false
+          },
+          "version": "7.0.1"
+        },
+        "rejects_ue_links": false
+      },
+      "widgets_values": [
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1
+      ]
     },
     {
       "id": 72,
@@ -66,7 +239,7 @@
           "name": "vae",
           "type": "VAE",
           "links": [
-            123
+            135
           ]
         },
         {
@@ -89,176 +262,6 @@
         "",
         "model.safetensors",
         "Flux_dev_turbo_krea_mix.safetensors"
-      ]
-    },
-    {
-      "id": 75,
-      "type": "SaveImage",
-      "pos": [
-        1420,
-        230
-      ],
-      "size": [
-        380,
-        360
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 120
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.53",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "filename_prefix": true
-          },
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
-      "id": 73,
-      "type": "2261bd8c-881b-421f-a5d4-3e63d13346bb",
-      "pos": [
-        730,
-        230
-      ],
-      "size": [
-        340,
-        360
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 116
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 117
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            118
-          ]
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            119
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.52",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "lora_name": true,
-            "strength_model": true,
-            "strength_clip": true,
-            "lora_name_1": true,
-            "strength_model_1": true,
-            "strength_clip_1": true,
-            "lora_name_2": true,
-            "strength_model_2": true,
-            "lora_name_3": true,
-            "strength_model_3": true,
-            "strength_clip_2": true
-          },
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        "None",
-        1,
-        1,
-        "None",
-        1,
-        1,
-        "None",
-        1,
-        1,
-        "None",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 74,
-      "type": "98eae27a-68d6-421b-bfcb-47552514b41d",
-      "pos": [
-        1080,
-        230
-      ],
-      "size": [
-        330,
-        360
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 118
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 119
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 123
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            120
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.49",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "chân dung cô gái đang chơi guitar, ngoài trời, bầu trời xanh",
-        "Auto",
-        20,
-        1536,
-        2048,
-        "None"
       ]
     }
   ],
@@ -336,22 +339,6 @@
       "CLIP"
     ],
     [
-      118,
-      73,
-      0,
-      74,
-      0,
-      "MODEL"
-    ],
-    [
-      119,
-      73,
-      1,
-      74,
-      1,
-      "CLIP"
-    ],
-    [
       120,
       74,
       0,
@@ -360,7 +347,23 @@
       "IMAGE"
     ],
     [
-      123,
+      133,
+      73,
+      0,
+      74,
+      0,
+      "MODEL"
+    ],
+    [
+      134,
+      73,
+      1,
+      74,
+      1,
+      "CLIP"
+    ],
+    [
+      135,
       72,
       2,
       74,
@@ -1200,7 +1203,7 @@
         "state": {
           "lastGroupId": 0,
           "lastNodeId": 8,
-          "lastLinkId": 23,
+          "lastLinkId": 32,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -1238,11 +1241,11 @@
             }
           },
           {
-            "id": "2b8775a3-d02b-4949-8d6e-ac8fa8b89343",
-            "name": "model",
-            "type": "MODEL",
+            "id": "401240e4-11b4-47f6-adbf-5a1c5bac53dc",
+            "name": "style",
+            "type": "COMBO",
             "linkIds": [
-              16
+              24
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1250,11 +1253,11 @@
             }
           },
           {
-            "id": "a754d87b-7f26-4c00-b4fd-177816328623",
-            "name": "clip",
-            "type": "CLIP",
+            "id": "60702cf0-3369-4e05-a1a8-a3a80ed46fcd",
+            "name": "model",
+            "type": "MODEL",
             "linkIds": [
-              17
+              25
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1262,11 +1265,11 @@
             }
           },
           {
-            "id": "d27ba8ea-26e7-434f-b565-b7b2609da35d",
-            "name": "vae",
-            "type": "VAE",
+            "id": "d11b7057-a532-4102-8443-18ce9562d6e3",
+            "name": "clip",
+            "type": "CLIP",
             "linkIds": [
-              18
+              26
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1274,11 +1277,11 @@
             }
           },
           {
-            "id": "b7801ed6-b950-43c4-a073-acdc64dac55a",
-            "name": "ModelType",
-            "type": "COMBO",
+            "id": "2694a4d8-e2c9-4025-b971-c22b96ce1fce",
+            "name": "vae",
+            "type": "VAE",
             "linkIds": [
-              19
+              27
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1286,11 +1289,11 @@
             }
           },
           {
-            "id": "bbcca72a-abb9-442d-88c8-ec005b1e11ba",
-            "name": "steps",
-            "type": "INT",
+            "id": "0a577176-88fd-478b-9b70-6585a15869a2",
+            "name": "ModelType",
+            "type": "COMBO",
             "linkIds": [
-              20
+              28
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1298,11 +1301,11 @@
             }
           },
           {
-            "id": "3146757e-8ebf-4958-b8fb-ff307875783b",
-            "name": "tile_width",
+            "id": "15a872b3-9612-4151-b534-987f9c7bdd6b",
+            "name": "steps",
             "type": "INT",
             "linkIds": [
-              21
+              29
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1310,11 +1313,11 @@
             }
           },
           {
-            "id": "cc090ba2-05a0-4260-bb95-281e5e928284",
-            "name": "tile_height",
+            "id": "f8367963-9768-4330-ae3a-71e42be5a35f",
+            "name": "tile_width",
             "type": "INT",
             "linkIds": [
-              22
+              30
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1322,11 +1325,11 @@
             }
           },
           {
-            "id": "42b448c3-fcaa-453a-8fbf-946dbc57e9dc",
-            "name": "style",
-            "type": "COMBO",
+            "id": "8472ef56-f6c2-4ed2-9e89-c8d2addf16b1",
+            "name": "tile_height",
+            "type": "INT",
             "linkIds": [
-              23
+              31
             ],
             "pos": {
               "0": 1185.59716796875,
@@ -1370,7 +1373,7 @@
                 "localized_name": "model",
                 "name": "model",
                 "type": "MODEL",
-                "link": 16
+                "link": 25
               },
               {
                 "localized_name": "positive",
@@ -1397,7 +1400,7 @@
                 "name": "vae",
                 "shape": 7,
                 "type": "VAE",
-                "link": 18
+                "link": 27
               },
               {
                 "localized_name": "ModelType",
@@ -1406,7 +1409,7 @@
                 "widget": {
                   "name": "ModelType"
                 },
-                "link": 19
+                "link": 28
               },
               {
                 "localized_name": "steps",
@@ -1415,7 +1418,7 @@
                 "widget": {
                   "name": "steps"
                 },
-                "link": 20
+                "link": 29
               },
               {
                 "localized_name": "tile_width",
@@ -1425,7 +1428,7 @@
                 "widget": {
                   "name": "tile_width"
                 },
-                "link": 21
+                "link": 30
               },
               {
                 "localized_name": "tile_height",
@@ -1435,7 +1438,7 @@
                 "widget": {
                   "name": "tile_height"
                 },
-                "link": 22
+                "link": 31
               }
             ],
             "outputs": [
@@ -1464,15 +1467,15 @@
               "Auto",
               "None",
               1,
-              20,
+              12,
               8,
               "euler",
               "simple",
-              27922100456252,
+              515850598774419,
               "randomize",
               false,
+              1024,
               1536,
-              2048,
               3.5
             ]
           },
@@ -1495,7 +1498,7 @@
                 "localized_name": "clip",
                 "name": "clip",
                 "type": "CLIP",
-                "link": 17
+                "link": 26
               },
               {
                 "localized_name": "positive",
@@ -1513,7 +1516,7 @@
                 "widget": {
                   "name": "style"
                 },
-                "link": 23
+                "link": 24
               }
             ],
             "outputs": [
@@ -1545,11 +1548,11 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              "chân dung cô gái đang chơi guitar, ngoài trời, bầu trời xanh",
-              "",
+              "chân dung cô gái trẻ",
+              "None",
               "None",
               "english",
-              541883466352090,
+              152998564646739,
               "randomize"
             ]
           }
@@ -1581,68 +1584,68 @@
             "type": "STRING"
           },
           {
-            "id": 16,
+            "id": 24,
             "origin_id": -10,
             "origin_slot": 1,
+            "target_id": 1,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 25,
+            "origin_id": -10,
+            "origin_slot": 2,
             "target_id": 6,
             "target_slot": 0,
             "type": "MODEL"
           },
           {
-            "id": 17,
+            "id": 26,
             "origin_id": -10,
-            "origin_slot": 2,
+            "origin_slot": 3,
             "target_id": 1,
             "target_slot": 0,
             "type": "CLIP"
           },
           {
-            "id": 18,
+            "id": 27,
             "origin_id": -10,
-            "origin_slot": 3,
+            "origin_slot": 4,
             "target_id": 6,
             "target_slot": 4,
             "type": "VAE"
           },
           {
-            "id": 19,
+            "id": 28,
             "origin_id": -10,
-            "origin_slot": 4,
+            "origin_slot": 5,
             "target_id": 6,
             "target_slot": 5,
             "type": "COMBO"
           },
           {
-            "id": 20,
+            "id": 29,
             "origin_id": -10,
-            "origin_slot": 5,
+            "origin_slot": 6,
             "target_id": 6,
             "target_slot": 6,
             "type": "INT"
           },
           {
-            "id": 21,
+            "id": 30,
             "origin_id": -10,
-            "origin_slot": 6,
+            "origin_slot": 7,
             "target_id": 6,
             "target_slot": 7,
             "type": "INT"
           },
           {
-            "id": 22,
+            "id": 31,
             "origin_id": -10,
-            "origin_slot": 7,
+            "origin_slot": 8,
             "target_id": 6,
             "target_slot": 8,
             "type": "INT"
-          },
-          {
-            "id": 23,
-            "origin_id": -10,
-            "origin_slot": 8,
-            "target_id": 1,
-            "target_slot": 2,
-            "type": "COMBO"
           }
         ],
         "extra": {
@@ -1655,10 +1658,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.1910378519443128,
+      "scale": 1.4625209831130432,
       "offset": [
-        129.21790342756728,
-        -42.3772990917662
+        -372.52935071955375,
+        -77.89831923189871
       ]
     },
     "ue_links": [],
