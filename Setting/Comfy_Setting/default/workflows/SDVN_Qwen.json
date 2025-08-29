@@ -1,0 +1,1739 @@
+{
+  "id": "57b85127-9570-42c5-a138-6ecbcbe18190",
+  "revision": 0,
+  "last_node_id": 96,
+  "last_link_id": 157,
+  "nodes": [
+    {
+      "id": 77,
+      "type": "MarkdownNote",
+      "pos": [
+        410,
+        460
+      ],
+      "size": [
+        310,
+        130
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "ℹ️ SDVN",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "### ComfyUI Colab:\n- Creator: [stablediffusion.vn](https://stablediffusion.vn/)\n- Website: [sdvn.me](https://sdvn.me) | [comfy.vn](https://comfy.vn) | [fluxai.vn](https://fluxai.vn)\n- Sub Web: [trainlora.vn](https://trainlora.vn) | [shakker.vn](https://shakker.vn)\n- Document: [bit.ly/sdvn-lib](https://drive.google.com/drive/folders/1tvSR1hddNhddMnU5JaRohtTf_qJ6LE1r)\n- Skills training: [hungdiffusion.com](https://hungdiffusion.com)"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 75,
+      "type": "SaveImage",
+      "pos": [
+        1417.9219970703125,
+        231.4310760498047
+      ],
+      "size": [
+        380,
+        360
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 157
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.53",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "filename_prefix": false
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 73,
+      "type": "2261bd8c-881b-421f-a5d4-3e63d13346bb",
+      "pos": [
+        730,
+        230
+      ],
+      "size": [
+        340,
+        360
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 153
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 154
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            133
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            134
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "lora_name": false,
+            "strength_model": false,
+            "strength_clip": false,
+            "lora_name_1": false,
+            "strength_model_1": false,
+            "strength_clip_1": false,
+            "lora_name_2": false,
+            "strength_model_2": false,
+            "lora_name_3": false,
+            "strength_model_3": false,
+            "strength_clip_2": false,
+            "strength_clip_3": false
+          },
+          "version": "7.0.1"
+        },
+        "rejects_ue_links": false
+      },
+      "widgets_values": [
+        "Qwen-Image-Edit-Lightning-4steps.safetensors",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 74,
+      "type": "98eae27a-68d6-421b-bfcb-47552514b41d",
+      "pos": [
+        1080,
+        230
+      ],
+      "size": [
+        330,
+        360
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 133
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 134
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            157
+          ]
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": []
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.49",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "chân dung cô gái trẻ",
+        "None",
+        "QwenImage Lightning",
+        4,
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": 95,
+      "type": "SDVN Load Checkpoint",
+      "pos": [
+        410,
+        230
+      ],
+      "size": [
+        310,
+        190
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            153
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            154
+          ]
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            155
+          ]
+        },
+        {
+          "name": "ckpt_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "ac1809edb0919a26f22e3d8ee9edaa3ac2b8aed9",
+        "Node name for S&R": "SDVN Load Checkpoint",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "Download": false,
+            "Download_url": false,
+            "Ckpt_url_name": false,
+            "Ckpt_name": false
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "Qwen_Image_fp8.safetensors"
+      ]
+    }
+  ],
+  "links": [
+    [
+      75,
+      10,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      76,
+      12,
+      0,
+      44,
+      0,
+      "MODEL"
+    ],
+    [
+      77,
+      11,
+      0,
+      48,
+      0,
+      "CLIP"
+    ],
+    [
+      78,
+      10,
+      0,
+      30,
+      1,
+      "VAE"
+    ],
+    [
+      79,
+      12,
+      0,
+      51,
+      0,
+      "MODEL"
+    ],
+    [
+      80,
+      11,
+      0,
+      51,
+      1,
+      "CLIP"
+    ],
+    [
+      81,
+      10,
+      0,
+      51,
+      2,
+      "VAE"
+    ],
+    [
+      133,
+      73,
+      0,
+      74,
+      0,
+      "MODEL"
+    ],
+    [
+      134,
+      73,
+      1,
+      74,
+      1,
+      "CLIP"
+    ],
+    [
+      153,
+      95,
+      0,
+      73,
+      0,
+      "MODEL"
+    ],
+    [
+      154,
+      95,
+      1,
+      73,
+      1,
+      "CLIP"
+    ],
+    [
+      155,
+      95,
+      2,
+      74,
+      2,
+      "VAE"
+    ],
+    [
+      157,
+      74,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "2261bd8c-881b-421f-a5d4-3e63d13346bb",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 127,
+          "lastLinkId": 383,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Multi Lora",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -279.1945425863765,
+            119.30211927482677,
+            152.0751953125,
+            320
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            1040,
+            110,
+            120,
+            80
+          ]
+        },
+        "inputs": [
+          {
+            "id": "c4ba112b-a8b8-488d-979d-f6568eefd035",
+            "name": "model",
+            "type": "MODEL",
+            "linkIds": [
+              354
+            ],
+            "localized_name": "model",
+            "shape": 7,
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 139.3021240234375
+            }
+          },
+          {
+            "id": "6b99a3b6-4191-468a-87a5-79e7b43b5283",
+            "name": "clip",
+            "type": "CLIP",
+            "linkIds": [
+              355
+            ],
+            "localized_name": "clip",
+            "shape": 7,
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 159.3021240234375
+            }
+          },
+          {
+            "id": "77b70346-2cbf-4029-ab4a-99a231eeefdf",
+            "name": "lora_name",
+            "type": "COMBO",
+            "linkIds": [
+              368
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 179.3021240234375
+            }
+          },
+          {
+            "id": "2bd4d7be-beb5-4c25-b849-6123ad7471d1",
+            "name": "strength_model",
+            "type": "FLOAT",
+            "linkIds": [
+              369
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 199.3021240234375
+            }
+          },
+          {
+            "id": "d9ba3f29-0054-4351-8ace-f3064e9b1b60",
+            "name": "strength_clip",
+            "type": "FLOAT",
+            "linkIds": [
+              370
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 219.3021240234375
+            }
+          },
+          {
+            "id": "e8728ec1-2a8d-4cd8-92e4-55b9e44fc222",
+            "name": "lora_name_1",
+            "type": "COMBO",
+            "linkIds": [
+              371
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 239.3021240234375
+            }
+          },
+          {
+            "id": "d849aaf5-c939-4775-9f1b-573af8d546a7",
+            "name": "strength_model_1",
+            "type": "FLOAT",
+            "linkIds": [
+              372
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 259.3021240234375
+            }
+          },
+          {
+            "id": "fb3268d7-cb06-47d2-8cf8-59ad9153a796",
+            "name": "strength_clip_1",
+            "type": "FLOAT",
+            "linkIds": [
+              373
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 279.3021240234375
+            }
+          },
+          {
+            "id": "a2a1969a-5ddd-4238-b9b4-41016e99ac6a",
+            "name": "lora_name_2",
+            "type": "COMBO",
+            "linkIds": [
+              374
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 299.3021240234375
+            }
+          },
+          {
+            "id": "9e63acaa-69d0-4dac-999e-18d5bc23f6a7",
+            "name": "strength_model_2",
+            "type": "FLOAT",
+            "linkIds": [
+              375
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 319.3021240234375
+            }
+          },
+          {
+            "id": "03f051a1-ce8a-4772-a840-fbc81a2bac31",
+            "name": "strength_clip_2",
+            "type": "FLOAT",
+            "linkIds": [
+              380
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 339.3021240234375
+            }
+          },
+          {
+            "id": "2899f0a4-2819-436b-aec9-0f10ad72818a",
+            "name": "lora_name_3",
+            "type": "COMBO",
+            "linkIds": [
+              381
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 359.3021240234375
+            }
+          },
+          {
+            "id": "516fa220-07b4-4832-8994-09424b827e0e",
+            "name": "strength_model_3",
+            "type": "FLOAT",
+            "linkIds": [
+              382
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 379.3021240234375
+            }
+          },
+          {
+            "id": "2cf43cab-e61f-4c25-97d4-ab26243c74b3",
+            "name": "strength_clip_3",
+            "type": "FLOAT",
+            "linkIds": [
+              383
+            ],
+            "pos": {
+              "0": -147.11935424804688,
+              "1": 399.3021240234375
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "id": "a320c4f2-3347-49c7-b1c7-ce30020804f7",
+            "name": "model",
+            "type": "MODEL",
+            "linkIds": [
+              366
+            ],
+            "localized_name": "model",
+            "pos": {
+              "0": 1060,
+              "1": 130
+            }
+          },
+          {
+            "id": "a58748aa-a930-4fdb-85da-d1e82c6fba9b",
+            "name": "clip",
+            "type": "CLIP",
+            "linkIds": [
+              367
+            ],
+            "localized_name": "clip",
+            "pos": {
+              "0": 1060,
+              "1": 150
+            }
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 125,
+            "type": "SDVN Load Lora",
+            "pos": [
+              -100,
+              120
+            ],
+            "size": [
+              270,
+              218
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "shape": 7,
+                "type": "MODEL",
+                "link": 354
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "shape": 7,
+                "type": "CLIP",
+                "link": 355
+              },
+              {
+                "localized_name": "lora_name",
+                "name": "lora_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "lora_name"
+                },
+                "link": 368
+              },
+              {
+                "localized_name": "strength_model",
+                "name": "strength_model",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_model"
+                },
+                "link": 369
+              },
+              {
+                "localized_name": "strength_clip",
+                "name": "strength_clip",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_clip"
+                },
+                "link": 370
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "links": [
+                  356
+                ]
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "links": [
+                  357
+                ]
+              },
+              {
+                "localized_name": "lora_path",
+                "name": "lora_path",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "sdvn_comfy_node",
+              "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
+              "Node name for S&R": "SDVN Load Lora",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.0.1"
+              }
+            },
+            "widgets_values": [
+              true,
+              "",
+              "model.safetensors",
+              "Qwen-Image-Edit-Lightning-4steps.safetensors",
+              1,
+              1
+            ]
+          },
+          {
+            "id": 84,
+            "type": "SDVN Load Lora",
+            "pos": [
+              180,
+              120
+            ],
+            "size": [
+              270,
+              218
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "shape": 7,
+                "type": "MODEL",
+                "link": 356
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "shape": 7,
+                "type": "CLIP",
+                "link": 357
+              },
+              {
+                "localized_name": "lora_name",
+                "name": "lora_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "lora_name"
+                },
+                "link": 371
+              },
+              {
+                "localized_name": "strength_model",
+                "name": "strength_model",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_model"
+                },
+                "link": 372
+              },
+              {
+                "localized_name": "strength_clip",
+                "name": "strength_clip",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_clip"
+                },
+                "link": 373
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "links": [
+                  362
+                ]
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "links": [
+                  363
+                ]
+              },
+              {
+                "localized_name": "lora_path",
+                "name": "lora_path",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "sdvn_comfy_node",
+              "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
+              "Node name for S&R": "SDVN Load Lora",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.0.1"
+              }
+            },
+            "widgets_values": [
+              true,
+              "",
+              "model.safetensors",
+              "None",
+              1,
+              1
+            ]
+          },
+          {
+            "id": 126,
+            "type": "SDVN Load Lora",
+            "pos": [
+              460,
+              120
+            ],
+            "size": [
+              270,
+              218
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "shape": 7,
+                "type": "MODEL",
+                "link": 362
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "shape": 7,
+                "type": "CLIP",
+                "link": 363
+              },
+              {
+                "localized_name": "lora_name",
+                "name": "lora_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "lora_name"
+                },
+                "link": 374
+              },
+              {
+                "localized_name": "strength_model",
+                "name": "strength_model",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_model"
+                },
+                "link": 375
+              },
+              {
+                "localized_name": "strength_clip",
+                "name": "strength_clip",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_clip"
+                },
+                "link": 380
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "links": [
+                  364
+                ]
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "links": [
+                  365
+                ]
+              },
+              {
+                "localized_name": "lora_path",
+                "name": "lora_path",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "sdvn_comfy_node",
+              "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
+              "Node name for S&R": "SDVN Load Lora",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.0.1"
+              }
+            },
+            "widgets_values": [
+              true,
+              "",
+              "model.safetensors",
+              "None",
+              1,
+              1
+            ]
+          },
+          {
+            "id": 127,
+            "type": "SDVN Load Lora",
+            "pos": [
+              740,
+              120
+            ],
+            "size": [
+              270,
+              218
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "shape": 7,
+                "type": "MODEL",
+                "link": 364
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "shape": 7,
+                "type": "CLIP",
+                "link": 365
+              },
+              {
+                "localized_name": "lora_name",
+                "name": "lora_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "lora_name"
+                },
+                "link": 381
+              },
+              {
+                "localized_name": "strength_model",
+                "name": "strength_model",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_model"
+                },
+                "link": 382
+              },
+              {
+                "localized_name": "strength_clip",
+                "name": "strength_clip",
+                "shape": 7,
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_clip"
+                },
+                "link": 383
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "links": [
+                  366
+                ]
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "links": [
+                  367
+                ]
+              },
+              {
+                "localized_name": "lora_path",
+                "name": "lora_path",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "sdvn_comfy_node",
+              "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
+              "Node name for S&R": "SDVN Load Lora",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.0.1"
+              }
+            },
+            "widgets_values": [
+              true,
+              "",
+              "model.safetensors",
+              "None",
+              1,
+              1
+            ]
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 356,
+            "origin_id": 125,
+            "origin_slot": 0,
+            "target_id": 84,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 357,
+            "origin_id": 125,
+            "origin_slot": 1,
+            "target_id": 84,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 354,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 125,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 355,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 125,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 362,
+            "origin_id": 84,
+            "origin_slot": 0,
+            "target_id": 126,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 363,
+            "origin_id": 84,
+            "origin_slot": 1,
+            "target_id": 126,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 364,
+            "origin_id": 126,
+            "origin_slot": 0,
+            "target_id": 127,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 365,
+            "origin_id": 126,
+            "origin_slot": 1,
+            "target_id": 127,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 366,
+            "origin_id": 127,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 367,
+            "origin_id": 127,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 368,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 125,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 369,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 125,
+            "target_slot": 3,
+            "type": "FLOAT"
+          },
+          {
+            "id": 370,
+            "origin_id": -10,
+            "origin_slot": 4,
+            "target_id": 125,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 371,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 84,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 372,
+            "origin_id": -10,
+            "origin_slot": 6,
+            "target_id": 84,
+            "target_slot": 3,
+            "type": "FLOAT"
+          },
+          {
+            "id": 373,
+            "origin_id": -10,
+            "origin_slot": 7,
+            "target_id": 84,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 374,
+            "origin_id": -10,
+            "origin_slot": 8,
+            "target_id": 126,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 375,
+            "origin_id": -10,
+            "origin_slot": 9,
+            "target_id": 126,
+            "target_slot": 3,
+            "type": "FLOAT"
+          },
+          {
+            "id": 380,
+            "origin_id": -10,
+            "origin_slot": 10,
+            "target_id": 126,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 381,
+            "origin_id": -10,
+            "origin_slot": 11,
+            "target_id": 127,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 382,
+            "origin_id": -10,
+            "origin_slot": 12,
+            "target_id": 127,
+            "target_slot": 3,
+            "type": "FLOAT"
+          },
+          {
+            "id": 383,
+            "origin_id": -10,
+            "origin_slot": 13,
+            "target_id": 127,
+            "target_slot": 4,
+            "type": "FLOAT"
+          }
+        ],
+        "extra": {
+          "ue_links": [],
+          "links_added_by_ue": []
+        }
+      },
+      {
+        "id": "98eae27a-68d6-421b-bfcb-47552514b41d",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 8,
+          "lastLinkId": 35,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Ksampler",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            1085.59716796875,
+            710.836181640625,
+            120,
+            220
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            2005.59716796875,
+            720.836181640625,
+            120,
+            100
+          ]
+        },
+        "inputs": [
+          {
+            "id": "e213c3b8-29a3-431a-b633-9b0b6a06cd16",
+            "name": "positive",
+            "type": "STRING",
+            "linkIds": [
+              9
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 730.836181640625
+            }
+          },
+          {
+            "id": "401240e4-11b4-47f6-adbf-5a1c5bac53dc",
+            "name": "style",
+            "type": "COMBO",
+            "linkIds": [
+              24
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 750.836181640625
+            }
+          },
+          {
+            "id": "60702cf0-3369-4e05-a1a8-a3a80ed46fcd",
+            "name": "model",
+            "type": "MODEL",
+            "linkIds": [
+              25
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 770.836181640625
+            }
+          },
+          {
+            "id": "d11b7057-a532-4102-8443-18ce9562d6e3",
+            "name": "clip",
+            "type": "CLIP",
+            "linkIds": [
+              26
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 790.836181640625
+            }
+          },
+          {
+            "id": "2694a4d8-e2c9-4025-b971-c22b96ce1fce",
+            "name": "vae",
+            "type": "VAE",
+            "linkIds": [
+              27
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 810.836181640625
+            }
+          },
+          {
+            "id": "0a577176-88fd-478b-9b70-6585a15869a2",
+            "name": "ModelType",
+            "type": "COMBO",
+            "linkIds": [
+              28
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 830.836181640625
+            }
+          },
+          {
+            "id": "15a872b3-9612-4151-b534-987f9c7bdd6b",
+            "name": "steps",
+            "type": "INT",
+            "linkIds": [
+              29
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 850.836181640625
+            }
+          },
+          {
+            "id": "f8367963-9768-4330-ae3a-71e42be5a35f",
+            "name": "tile_width",
+            "type": "INT",
+            "linkIds": [
+              30
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 870.836181640625
+            }
+          },
+          {
+            "id": "8472ef56-f6c2-4ed2-9e89-c8d2addf16b1",
+            "name": "tile_height",
+            "type": "INT",
+            "linkIds": [
+              31
+            ],
+            "pos": {
+              "0": 1185.59716796875,
+              "1": 890.836181640625
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "id": "b39692ac-85d7-4ede-a65e-871f6fca1afa",
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "linkIds": [
+              2
+            ],
+            "localized_name": "IMAGE",
+            "pos": {
+              "0": 2025.59716796875,
+              "1": 740.836181640625
+            }
+          },
+          {
+            "id": "e004cb94-5644-4fa9-967a-261a121a5867",
+            "name": "positive",
+            "type": "CONDITIONING",
+            "linkIds": [
+              34
+            ],
+            "pos": {
+              "0": 2025.59716796875,
+              "1": 760.836181640625
+            }
+          },
+          {
+            "id": "a0ba7548-539c-4a22-9d26-190395a6d977",
+            "name": "negative",
+            "type": "CONDITIONING",
+            "linkIds": [
+              35
+            ],
+            "pos": {
+              "0": 2025.59716796875,
+              "1": 780.836181640625
+            }
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 6,
+            "type": "SDVN KSampler",
+            "pos": [
+              1675.59716796875,
+              552.836181640625
+            ],
+            "size": [
+              270,
+              638
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 25
+              },
+              {
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "link": 6
+              },
+              {
+                "localized_name": "negative",
+                "name": "negative",
+                "shape": 7,
+                "type": "CONDITIONING",
+                "link": 33
+              },
+              {
+                "localized_name": "latent_image",
+                "name": "latent_image",
+                "shape": 7,
+                "type": "LATENT",
+                "link": null
+              },
+              {
+                "localized_name": "vae",
+                "name": "vae",
+                "shape": 7,
+                "type": "VAE",
+                "link": 27
+              },
+              {
+                "localized_name": "ModelType",
+                "name": "ModelType",
+                "type": "COMBO",
+                "widget": {
+                  "name": "ModelType"
+                },
+                "link": 28
+              },
+              {
+                "localized_name": "steps",
+                "name": "steps",
+                "type": "INT",
+                "widget": {
+                  "name": "steps"
+                },
+                "link": 29
+              },
+              {
+                "localized_name": "tile_width",
+                "name": "tile_width",
+                "shape": 7,
+                "type": "INT",
+                "widget": {
+                  "name": "tile_width"
+                },
+                "link": 30
+              },
+              {
+                "localized_name": "tile_height",
+                "name": "tile_height",
+                "shape": 7,
+                "type": "INT",
+                "widget": {
+                  "name": "tile_height"
+                },
+                "link": 31
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "links": null
+              },
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  2
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "sdvn_comfy_node",
+              "ver": "292318441c34ca48b49b7f6b94fa400e8c105bda",
+              "Node name for S&R": "SDVN KSampler",
+              "widget_ue_connectable": {}
+            },
+            "widgets_values": [
+              "QwenImage Lightning",
+              "None",
+              1,
+              4,
+              8,
+              "euler",
+              "simple",
+              530706540553110,
+              "randomize",
+              false,
+              1024,
+              1536,
+              3.5
+            ]
+          },
+          {
+            "id": 1,
+            "type": "SDVN CLIP Text Encode",
+            "pos": [
+              1265.59716796875,
+              552.836181640625
+            ],
+            "size": [
+              400,
+              278
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 26
+              },
+              {
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "STRING",
+                "widget": {
+                  "name": "positive"
+                },
+                "link": 9
+              },
+              {
+                "localized_name": "style",
+                "name": "style",
+                "type": "COMBO",
+                "widget": {
+                  "name": "style"
+                },
+                "link": 24
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "links": [
+                  6,
+                  34
+                ]
+              },
+              {
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "links": [
+                  33,
+                  35
+                ]
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "sdvn_comfy_node",
+              "ver": "292318441c34ca48b49b7f6b94fa400e8c105bda",
+              "Node name for S&R": "SDVN CLIP Text Encode",
+              "widget_ue_connectable": {}
+            },
+            "widgets_values": [
+              "chân dung cô gái trẻ",
+              "None",
+              "None",
+              "english",
+              901206596636009,
+              "randomize"
+            ]
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 6,
+            "origin_id": 1,
+            "origin_slot": 0,
+            "target_id": 6,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 2,
+            "origin_id": 6,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 9,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 1,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 24,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 1,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 25,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 6,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 26,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 1,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 27,
+            "origin_id": -10,
+            "origin_slot": 4,
+            "target_id": 6,
+            "target_slot": 4,
+            "type": "VAE"
+          },
+          {
+            "id": 28,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 6,
+            "target_slot": 5,
+            "type": "COMBO"
+          },
+          {
+            "id": 29,
+            "origin_id": -10,
+            "origin_slot": 6,
+            "target_id": 6,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 30,
+            "origin_id": -10,
+            "origin_slot": 7,
+            "target_id": 6,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 31,
+            "origin_id": -10,
+            "origin_slot": 8,
+            "target_id": 6,
+            "target_slot": 8,
+            "type": "INT"
+          },
+          {
+            "id": 33,
+            "origin_id": 1,
+            "origin_slot": 1,
+            "target_id": 6,
+            "target_slot": 2,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 34,
+            "origin_id": 1,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 35,
+            "origin_id": 1,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 2,
+            "type": "CONDITIONING"
+          }
+        ],
+        "extra": {
+          "ue_links": [],
+          "links_added_by_ue": []
+        }
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.3696070176162518,
+      "offset": [
+        -335.7313547378537,
+        -46.705088283539375
+      ]
+    },
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "frontendVersion": "1.25.11"
+  },
+  "version": 0.4
+}
