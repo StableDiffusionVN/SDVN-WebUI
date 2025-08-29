@@ -139,142 +139,6 @@
       ]
     },
     {
-      "id": 95,
-      "type": "SDVN Load Checkpoint",
-      "pos": [
-        310,
-        320
-      ],
-      "size": [
-        310,
-        190
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            153
-          ]
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            154
-          ]
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "links": [
-            155,
-            156
-          ]
-        },
-        {
-          "name": "ckpt_path",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "sdvn_comfy_node",
-        "ver": "ac1809edb0919a26f22e3d8ee9edaa3ac2b8aed9",
-        "Node name for S&R": "SDVN Load Checkpoint",
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "Download": false,
-            "Download_url": false,
-            "Ckpt_url_name": false,
-            "Ckpt_name": false
-          },
-          "version": "7.0.1"
-        }
-      },
-      "widgets_values": [
-        true,
-        "",
-        "model.safetensors",
-        "AdamXL-v3.safetensors"
-      ]
-    },
-    {
-      "id": 74,
-      "type": "98eae27a-68d6-421b-bfcb-47552514b41d",
-      "pos": [
-        980,
-        320
-      ],
-      "size": [
-        330,
-        360
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 133
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 134
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 155
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            147
-          ]
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            150
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            151
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.49",
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "chân dung cô gái trẻ, trong rừng",
-        "XL-BasePrompt",
-        "Auto",
-        20,
-        1024,
-        1024
-      ]
-    },
-    {
       "id": 73,
       "type": "2261bd8c-881b-421f-a5d4-3e63d13346bb",
       "pos": [
@@ -352,6 +216,143 @@
         "None",
         1,
         1
+      ]
+    },
+    {
+      "id": 95,
+      "type": "SDVN Load Checkpoint",
+      "pos": [
+        310,
+        320
+      ],
+      "size": [
+        310,
+        190
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            153
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            154
+          ]
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            155,
+            156
+          ]
+        },
+        {
+          "name": "ckpt_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
+        "ver": "ac1809edb0919a26f22e3d8ee9edaa3ac2b8aed9",
+        "Node name for S&R": "SDVN Load Checkpoint",
+        "cnr_id": "sdvn_comfy_node",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "Download": false,
+            "Download_url": false,
+            "Ckpt_url_name": false,
+            "Ckpt_name": false
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "SDVN10-Anime.safetensors"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "98eae27a-68d6-421b-bfcb-47552514b41d",
+      "pos": [
+        980,
+        320
+      ],
+      "size": [
+        330,
+        360
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 133
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 134
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            147
+          ]
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            150
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            151
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.49",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "chân dung cô gái trẻ, trong rừng",
+        "1.5-BasePrompt",
+        "Auto",
+        20,
+        512,
+        768
       ]
     }
   ],
@@ -822,9 +823,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
               "Node name for S&R": "SDVN Load Lora",
+              "cnr_id": "sdvn_comfy_node",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.0.1"
@@ -923,9 +925,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
               "Node name for S&R": "SDVN Load Lora",
+              "cnr_id": "sdvn_comfy_node",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.0.1"
@@ -1024,9 +1027,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
               "Node name for S&R": "SDVN Load Lora",
+              "cnr_id": "sdvn_comfy_node",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.0.1"
@@ -1125,9 +1129,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "aafd35f0c4b8e9eb369de1e2f5fedd2f46d88161",
               "Node name for S&R": "SDVN Load Lora",
+              "cnr_id": "sdvn_comfy_node",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.0.1"
@@ -1612,9 +1617,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "292318441c34ca48b49b7f6b94fa400e8c105bda",
               "Node name for S&R": "SDVN KSampler",
+              "cnr_id": "sdvn_comfy_node",
               "widget_ue_connectable": {}
             },
             "widgets_values": [
@@ -1625,11 +1631,11 @@
               8,
               "euler",
               "simple",
-              597259354469443,
+              970324369197123,
               "randomize",
               false,
-              1024,
-              1024,
+              512,
+              768,
               3.5
             ]
           },
@@ -1700,17 +1706,18 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "292318441c34ca48b49b7f6b94fa400e8c105bda",
               "Node name for S&R": "SDVN CLIP Text Encode",
+              "cnr_id": "sdvn_comfy_node",
               "widget_ue_connectable": {}
             },
             "widgets_values": [
               "chân dung cô gái trẻ, trong rừng",
-              "None",
               "XL-BasePrompt",
+              "1.5-BasePrompt",
               "english",
-              147726450831101,
+              749599381479856,
               "randomize"
             ]
           }
@@ -2122,9 +2129,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "ac1809edb0919a26f22e3d8ee9edaa3ac2b8aed9",
               "Node name for S&R": "SDVN KSampler",
+              "cnr_id": "sdvn_comfy_node",
               "ue_properties": {
                 "widget_ue_connectable": {}
               }
@@ -2137,7 +2145,7 @@
               8,
               "euler",
               "normal",
-              1083209718727870,
+              508300926523613,
               "randomize",
               false,
               768,
@@ -2188,9 +2196,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "sdvn_comfy_node",
+              "aux_id": "StableDiffusionVN/SDVN_Comfy_node",
               "ver": "ac1809edb0919a26f22e3d8ee9edaa3ac2b8aed9",
               "Node name for S&R": "SDVN Upscale Image",
+              "cnr_id": "sdvn_comfy_node",
               "ue_properties": {
                 "widget_ue_connectable": {}
               }
@@ -2315,8 +2324,8 @@
     "ds": {
       "scale": 1,
       "offset": [
-        0,
-        0
+        -58.8359375,
+        -22.7578125
       ]
     },
     "ue_links": [],
