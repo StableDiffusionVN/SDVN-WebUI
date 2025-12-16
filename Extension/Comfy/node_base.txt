@@ -47,3 +47,5 @@ git clone https://github.com/1038lab/ComfyUI-RMBG
 pip install -r /content/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
 git clone https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-SeedVR2_VideoUpscaler/requirements.txt
+git clone https://github.com/1038lab/ComfyUI-QwenVL
+pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-QwenVL/requirements.txt
