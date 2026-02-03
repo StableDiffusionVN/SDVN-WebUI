@@ -24,8 +24,8 @@ git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 
-git clone https://github.com/storyicon/comfyui_segment_anything
-pip install -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
+git clone https://github.com/StableDiffusionVN/SDVN_Segment_Anything
+pip install -q -r /content/ComfyUI/custom_nodes/SDVN_Segment_Anything/requirements.txt
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
 

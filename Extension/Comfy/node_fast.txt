@@ -5,12 +5,6 @@ git clone https://github.com/Fannovel16/comfyui_controlnet_aux
 pip install -r /content/ComfyUI/custom_nodes/comfyui_controlnet_aux/requirements.txt
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
-git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus
-pip install insightface
-git clone https://github.com/cubiq/ComfyUI_InstantID
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI_InstantID/requirements.txt
-git clone https://huggingface.co/DIAMONIK7777/antelopev2 /content/ComfyUI/models/insightface/models/antelopev2
-aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/phamhungd/GuoZovya/resolve/main/4x-UltraSharp.ckpt -d /content/ComfyUI/models/upscale_models -o 4x-UltraSharp.pth
 git clone https://github.com/StableDiffusionVN/SDVN_Comfy_node
 pip install -r /content/ComfyUI/custom_nodes/SDVN_Comfy_node/requirements.txt
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
@@ -21,7 +15,5 @@ git clone https://github.com/kijai/ComfyUI-Florence2
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
 git clone https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-SeedVR2_VideoUpscaler/requirements.txt
-git clone https://github.com/1038lab/ComfyUI-QwenVL
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-QwenVL/requirements.txt
-git clone https://github.com/storyicon/comfyui_segment_anything
-pip install -q -r /content/ComfyUI/custom_nodes/comfyui_segment_anything/requirements.txt
+git clone https://github.com/StableDiffusionVN/SDVN_Segment_Anything
+pip install -q -r /content/ComfyUI/custom_nodes/SDVN_Segment_Anything/requirements.txt
