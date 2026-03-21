@@ -1,0 +1,573 @@
+{
+  "id": "b4b01704-2691-4e61-b3dd-7979c7c30773",
+  "revision": 0,
+  "last_node_id": 35,
+  "last_link_id": 58,
+  "nodes": [
+    {
+      "id": 19,
+      "type": "SDVN Load Checkpoint",
+      "pos": [
+        -580,
+        -160
+      ],
+      "size": [
+        270,
+        190
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            40
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            41
+          ]
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            32,
+            57
+          ]
+        },
+        {
+          "name": "ckpt_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN Load Checkpoint",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "Flux2-klein-9b.safetensors"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "SDVN Apply Kontext Reference",
+      "pos": [
+        460,
+        -160
+      ],
+      "size": [
+        270,
+        160
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 54
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 57
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 56
+        },
+        {
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "links": [
+            55
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            58
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN Apply Kontext Reference",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        2048
+      ]
+    },
+    {
+      "id": 23,
+      "type": "SDVN KSampler",
+      "pos": [
+        770,
+        -160
+      ],
+      "size": [
+        260,
+        730
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 43
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 55
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "latent_image",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 58
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "Auto",
+        "Denoise",
+        1,
+        4,
+        8,
+        "euler",
+        "simple",
+        375210309733594,
+        "randomize",
+        false,
+        1280,
+        1920,
+        3.5
+      ]
+    },
+    {
+      "id": 21,
+      "type": "SDVN CLIP Text Encode Simple",
+      "pos": [
+        10,
+        -160
+      ],
+      "size": [
+        390,
+        300
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            54
+          ]
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN CLIP Text Encode Simple",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "upscale hình ảnh, làm rõ các chi tiết, tăng cường chi tiết da",
+        "None",
+        "None",
+        0,
+        "fixed"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "SDVN Load Lora",
+      "pos": [
+        -280,
+        -160
+      ],
+      "size": [
+        270,
+        220
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 40
+        },
+        {
+          "name": "clip",
+          "shape": 7,
+          "type": "CLIP",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            43
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            42
+          ]
+        },
+        {
+          "name": "lora_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN Load Lora",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        true,
+        "",
+        "model.safetensors",
+        "None",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 24,
+      "type": "SDVN Load Image",
+      "pos": [
+        130,
+        190
+      ],
+      "size": [
+        270,
+        390
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            37,
+            56
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": []
+        },
+        {
+          "name": "img_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN Load Image",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        },
+        "image": "clipspace/clipspace-painted-masked-1773758163257.png [input]"
+      },
+      "widgets_values": [
+        true,
+        "https://www.pinterest.com/pin/1148206867498621145/",
+        "None",
+        "image"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "SDVN Save Image",
+      "pos": [
+        1080,
+        -160
+      ],
+      "size": [
+        520,
+        730
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "name": "compare_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 37
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "sdvn_comfy_node",
+        "ver": "70331d189f487b2a6742ab87b988637f94c601ff",
+        "Node name for S&R": "SDVN Save Image",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "SDVN"
+      ]
+    }
+  ],
+  "links": [
+    [
+      32,
+      19,
+      2,
+      23,
+      4,
+      "VAE"
+    ],
+    [
+      33,
+      23,
+      1,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      37,
+      24,
+      0,
+      17,
+      1,
+      "IMAGE"
+    ],
+    [
+      40,
+      19,
+      0,
+      28,
+      0,
+      "MODEL"
+    ],
+    [
+      41,
+      19,
+      1,
+      28,
+      1,
+      "CLIP"
+    ],
+    [
+      42,
+      28,
+      1,
+      21,
+      0,
+      "CLIP"
+    ],
+    [
+      43,
+      28,
+      0,
+      23,
+      0,
+      "MODEL"
+    ],
+    [
+      54,
+      21,
+      0,
+      32,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      55,
+      32,
+      0,
+      23,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      56,
+      24,
+      0,
+      32,
+      2,
+      "IMAGE"
+    ],
+    [
+      57,
+      19,
+      2,
+      32,
+      1,
+      "VAE"
+    ],
+    [
+      58,
+      32,
+      3,
+      23,
+      3,
+      "LATENT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8873457045270914,
+      "offset": [
+        801.6335986875316,
+        409.29607696307204
+      ]
+    },
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "frontendVersion": "1.41.21"
+  },
+  "version": 0.4
+}
