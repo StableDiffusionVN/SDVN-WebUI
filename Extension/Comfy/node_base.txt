@@ -24,8 +24,9 @@ git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes
 git clone https://github.com/chrisgoringe/cg-use-everywhere
 git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
 
-git clone https://github.com/StableDiffusionVN/SDVN_Segment_Anything
-pip install -q -r /content/ComfyUI/custom_nodes/SDVN_Segment_Anything/requirements.txt
+#git clone https://github.com/StableDiffusionVN/SDVN_Segment_Anything
+#pip install -q -r /content/ComfyUI/custom_nodes/SDVN_Segment_Anything/requirements.txt
+
 git clone https://github.com/shiimizu/ComfyUI-TiledDiffusion
 git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
 
@@ -45,7 +46,5 @@ aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://hugging
 aria2c --continue --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -d /content/ComfyUI/models/pulid -o pulid_flux_v0.9.0.safetensors
 git clone https://github.com/1038lab/ComfyUI-RMBG
 pip install -r /content/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
-git clone https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler
-pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-SeedVR2_VideoUpscaler/requirements.txt
 git clone https://github.com/1038lab/ComfyUI-QwenVL
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-QwenVL/requirements.txt
