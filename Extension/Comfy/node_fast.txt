@@ -12,3 +12,4 @@ git clone https://github.com/1038lab/ComfyUI-RMBG
 pip install -r /content/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
 git clone https://github.com/kijai/ComfyUI-Florence2
 pip install -q -r /content/ComfyUI/custom_nodes/ComfyUI-Florence2/requirements.txt
+git clone https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler
